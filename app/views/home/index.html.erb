@@ -1,24 +1,18 @@
 <div class="jumbotron">
     <div class="container">
-        <h1>Want to Learn About Sharks?</h1>
-        <p>Are you ready to learn about sharks?</p>
+        <h1>Want to play a game?</h1>
+        <p>Log in to start</p>
         <br>
         <p>
-            <%= button_to 'Get Shark Info', '/', :method => :get,  :class => "btn btn-primary btn-lg"%>
+            <%= button_to 'Log In', '/', :method => :get,  :class => "btn btn-primary btn-lg"%>
         </p>
     </div>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-lg-6">
-            <h3>Not all sharks are alike</h3>
-            <p>Though some are dangerous, sharks generally do not attack humans. Out of the 500 species known to researchers, only 30 have been known to attack humans.
-            </p>
-        </div>
-        <div class="col-lg-6">
-            <h3>Sharks are ancient</h3>
-            <p>There is evidence to suggest that sharks lived up to 400 million years ago.
-            </p>
+            <h3>Don't have a account</h3>
+            <%= button_to 'Create New User', '/', :method => :get,  :class => "btn btn-primary btn-lg"%>
         </div>
     </div>
 </div>

@@ -7,7 +7,7 @@ RSpec.describe 'Home', type: :feature do
   describe 'GET /' do
     it 'displays the title of the application' do
       visit '/'
-      save_and_open_page
+      # save_and_open_page
       expect(page).to have_content('Dungeons_and_Discord')
     end
 
