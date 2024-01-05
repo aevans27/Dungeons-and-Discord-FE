@@ -4,4 +4,10 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root 'home#index'
+
+ 
+  get "/discord", to: "users/omniauth_callbacks_controller#discord"
+
+  # get "/users/:user_id"
 end
+
