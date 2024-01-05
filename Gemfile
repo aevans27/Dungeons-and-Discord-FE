@@ -28,6 +28,14 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Use CoffeeScript for .coffee assets and views
+gem 'coffee-rails'
+
+# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
+gem 'turbolinks'
+gem 'webpacker'
+gem 'font-awesome-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -44,23 +52,26 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'capybara'
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem 'launchy'
-  gem 'orderly'
-  gem 'pry'
-  gem 'rspec-rails'
-  gem 'shoulda-matchers'
-  gem 'simplecov'
-  gem 'vcr'
-  gem 'webmock'
+  # gem 'capybara'
+  # gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  # gem 'launchy'
+  # gem 'orderly'
+   gem 'pry'
+   gem 'bootstrap', '~> 5.3.2'
+   gem 'jquery-rails'
+   gem 'popper_js', '~> 2.11.8'
+  # gem 'rspec-rails'
+  # gem 'shoulda-matchers'
+  # gem 'simplecov'
+  # gem 'vcr'
+  # gem 'webmock'
 end
 
 group :development do
@@ -72,5 +83,14 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+end
+
+group :test do
+  gem "rspec-rails"
+  gem "capybara"
+  gem "launchy"
+  gem "shoulda-matchers"
+  gem "simplecov"
+  gem 'webmock'
 end
 

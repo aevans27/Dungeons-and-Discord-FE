@@ -1,0 +1,23 @@
+<% content_for :content do %>
+  <div class="jumbotron text-center">
+      <h1>Temp Info</h1>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <p>
+                  <%= yield %>
+              </p>
+          </div>
+          <div class="col-lg-6">
+              <p>
+
+                  <div class="caption">This is temp, will replace later!</div>
+                  <img src="https://assets.digitalocean.com/articles/docker_node_image/sammy.png" alt="Sammy the Shark">
+              </p>
+
+          </div>
+      </div>
+    </div>
+  <% end %>
+  <%= render template: "layouts/application" %>
