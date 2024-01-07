@@ -3,4 +3,18 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  root 'home#index'
+
+  get '/users', to:"users#show"
+  # get "/discord", to: "users/omniauth_callbacks_controller#discord"
+
+  # get "/users/:user_id"
+  get "/user/auth/discord/callback", to: "sessions#create"
+
+  # get "/login/oauth2/token", to: 
+
+
+  # the link below is the generated URL to get access for a specific user.
+  # https://discord.com/api/oauth2/authorize?client_id=1192879088579379231&response_type=code&redirect_uri=http%3A%2F%2F%5B%3A%3A1%5D%3A5000%2Fuser%2Fauth%2Fdiscord%2Fcallback&scope=identify
 end
+

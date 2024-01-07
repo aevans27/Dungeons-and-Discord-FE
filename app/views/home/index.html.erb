@@ -1,0 +1,18 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1>Want to play a game?</h1>
+        <p>Log in to start</p>
+        <br>
+        <p>
+            <%= link_to("Log in with Discord", "https://discord.com/api/oauth2/authorize?client_id=#{Rails.application.credentials.discord[:client_id]}&response_type=code&redirect_uri=http%3A%2F%2F%5B%3A%3A1%5D%3A5000%2Fuser%2Fauth%2Fdiscord%2Fcallback&scope=identify", method: :get) %>
+        </p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>Don't have a account</h3>
+            <%= button_to 'Create New User', '/', :method => :get,  :class => "btn btn-primary btn-lg"%>
+        </div>
+    </div>
+</div>
