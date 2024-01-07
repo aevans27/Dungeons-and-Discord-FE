@@ -40,12 +40,20 @@ class SessionsController < ApplicationController
       headers: {
         Authorization: "Bearer #{access_token}"
       }
-      )
-      url2 = 'https://discord.com/api/users/@me'
-      response = conn.get(url2)
-      data = JSON.parse(response.body, symbolize_names: true)
-      binding.pry
+    )
+    url2 = 'https://discord.com/api/users/@me'
+    response = conn.get(url2)
+    data = JSON.parse(response.body, symbolize_names: true)
+    # binding.pry
 
+    user          = User.find_or_create_by(uid: data[:id])
+    user.username = data[:username]
+    user.uid      = data[:id]
+    user.token    = access_token
+    user.save
 
-    end
+    session[:user_id] = user.id
+    
+    redirect_to "/users"
+  end
 end

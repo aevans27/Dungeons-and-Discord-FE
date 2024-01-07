@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'home#index'
 
- 
+  get '/users', to:"users#show"
   # get "/discord", to: "users/omniauth_callbacks_controller#discord"
 
   # get "/users/:user_id"
