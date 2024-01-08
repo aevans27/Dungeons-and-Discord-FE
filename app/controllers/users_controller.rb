@@ -4,4 +4,9 @@ class UsersController < ApplicationController
  
 
  end
+
+ def char_create
+
+
+ end
 end
