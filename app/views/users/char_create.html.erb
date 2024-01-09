@@ -1,0 +1,31 @@
+<% content_for :content do %>
+  <div class="jumbotron text-center">
+      <h1>Dungeons and Discord</h1>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <p>
+                  <%= yield %>
+              </p>
+          </div>
+          <div class="col-lg-6">
+              <p>
+                  <section>
+                    <section class="navbar-header">
+                      <p class ="navbar-title">Character Creation</p>
+                      <p class="navbar-subtitle">Build a character and get to playing your game with your pals!</p>
+                    </section>
+                    <section class="navbar-create-form">
+                      <%= form_tag("creation path", method: "get") do %>
+                        <%= select_tag(:index, options_for_select(class_list), {class: "select-field"}) %>
+                        <%= submit_tag('select class', class: "button") %>
+                      <% end %>
+                    </section>
+                  </section>
+              </p>
+          </div>
+      </div>
+    </div>
+  <% end %>
+  <%= render template: "layouts/application" %>
