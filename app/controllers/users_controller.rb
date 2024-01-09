@@ -1,12 +1,6 @@
 class UsersController < ApplicationController
 
- def show
- 
-
- end
-
- def char_create
-
-
- end
+  def show
+    @characters = CharacterFacade.get_characters(session[:user_id])
+  end
 end
