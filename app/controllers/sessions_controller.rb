@@ -58,7 +58,7 @@ class SessionsController < ApplicationController
   end
 
   def dummy_test
-    user          = User.find_or_create_by(uid: 1)
+    user          = User.find_or_create_by(uid: 123)
     user.username = "bubba"
     user.uid      = "123"
     user.token    = "password123"
