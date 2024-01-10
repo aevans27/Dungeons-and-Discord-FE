@@ -5,7 +5,17 @@ class UsersController < ApplicationController
   end
 
   def char_create
-    
+    # new_char = CharacterFacade.create
+  end
+
+  def prof_show
+    require 'pry';binding.pry
+    @facade = CharClassFacade.char_class(params[:index])
+    # @char_class = facade.char_class
+  end
+
+  def char_prof
+    require 'pry';binding.pry
   end
 
   def char_save
@@ -18,10 +28,13 @@ class UsersController < ApplicationController
       background: 'Acolyte',
       alignment: params[:alignment]
     })
-    redirect_to "/users"
+    redirect_to controller: 'users', action: 'prof_show', index: params[:index]
+    # redirect_to "/users/prof_show", index: params[:index]
   end
 
-  # private
+  private
+
+
 
   # def character_params
 

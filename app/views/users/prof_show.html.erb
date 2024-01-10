@@ -1,0 +1,40 @@
+<% content_for :content do %>
+  <div class="jumbotron text-center">
+      <h1>Dungeons and Discord</h1>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <p>
+                  <%= yield %>
+              </p>
+          </div>
+          <div class="col-lg-6">
+              <p>
+                  <section>
+                    <section class="navbar-header">
+                       
+                      <p class ="navbar-title">Character Proficiency for <%= params[:index].upcase %></p>
+                      <p class="navbar-subtitle"></p>
+                    </section>
+                    <section class="navbar-create-form">
+                      <%= form_tag("/users/char_prof", method: "post") do %>
+                      <p>Proficiency Choices: </p>
+                      <p>Select ONLY two</p>
+                        <% @facade.proficiency_choices.each do |prof| %>
+                        <%# <% binding.pry %> 
+                       
+                          <%= check_box_tag "Proficiency Choices", prof %>
+                          <%= label_tag prof[:item][:name] %><br>
+                        <% end %>
+                        <%= submit_tag('Submit', class: "button") %>
+                      <% end %>
+                          
+                    </section>
+                  </section>
+              </p>
+          </div>
+      </div>
+    </div>
+  <% end %>
+  <%= render template: "layouts/application" %>
