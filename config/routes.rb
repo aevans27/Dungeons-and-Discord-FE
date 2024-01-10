@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get '/users', to:"users#show"
   get '/users/char_create', to:"users#char_create"
+  post '/users/char_create', to:"users#char_save"
+
   # get "/discord", to: "users/omniauth_callbacks_controller#discord"
 
   # get "/users/:user_id"

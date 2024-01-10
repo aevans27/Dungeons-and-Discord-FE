@@ -17,9 +17,16 @@
                       <p class="navbar-subtitle">Build a character and get to playing your game with your pals!</p>
                     </section>
                     <section class="navbar-create-form">
-                      <%= form_tag("creation path", method: "get") do %>
+                      <%= form_tag("/users/char_create", method: "post") do %>
+                        <%= label_tag :name %>
+                        <%= text_field_tag :name %>
+                        <%= label_tag :index, 'Select Class' %>
                         <%= select_tag(:index, options_for_select(class_list), {class: "select-field"}) %>
-                        <%= submit_tag('select class', class: "button") %>
+                        <%= label_tag :race, 'Select Race' %>
+                        <%= select_tag(:race, options_for_select(race_list), {class: "select-field"}) %>
+                        <%= label_tag :alignment, 'Select alignment' %>
+                        <%= select_tag(:alignment, options_for_select(alignment_list), {class: "select-field"}) %>
+                        <%= submit_tag('Submit', class: "button") %>
                       <% end %>
                     </section>
                   </section>
