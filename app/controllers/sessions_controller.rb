@@ -44,7 +44,6 @@ class SessionsController < ApplicationController
     url2 = 'https://discord.com/api/users/@me'
     response = conn.get(url2)
     data = JSON.parse(response.body, symbolize_names: true)
-    # binding.pry
 
     user          = User.find_or_create_by(uid: data[:id])
     user.username = data[:username]

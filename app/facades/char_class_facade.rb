@@ -6,10 +6,8 @@ class CharClassFacade
 
   def self.char_class(index)
     json_response = CharacterService.get_url("/api/v1/charclasses/#{index}")
-    character = Charclass.new(json_response[:data])
-    # require 'pry';binding.pry
+    class_info = Charclass.new(json_response[:data])
     # characters = json_response[:data].map do |key, value|
-    #   require 'pry';binding.pry
     #   Charclass.new([:data])
     # end
   end

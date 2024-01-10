@@ -9,17 +9,14 @@ class UsersController < ApplicationController
   end
 
   def prof_show
-    require 'pry';binding.pry
     @facade = CharClassFacade.char_class(params[:index])
     # @char_class = facade.char_class
   end
 
   def char_prof
-    require 'pry';binding.pry
   end
 
   def char_save
-    # binding.pry
     new_char = CharacterFacade.create_character('/api/v1/characters', {
       user_id: current_user.id,
       name: params[:name],

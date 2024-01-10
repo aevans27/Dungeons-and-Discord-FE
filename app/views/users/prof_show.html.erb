@@ -11,28 +11,32 @@
           </div>
           <div class="col-lg-6">
               <p>
-                  <section>
-                    <section class="navbar-header">
-                       
-                      <p class ="navbar-title">Character Proficiency for <%= params[:index].upcase %></p>
-                      <p class="navbar-subtitle"></p>
-                    </section>
-                    <section class="navbar-create-form">
-                      <%= form_tag("/users/char_prof", method: "post") do %>
-                      <p>Proficiency Choices: </p>
-                      <p>Select ONLY two</p>
-                        <% @facade.proficiency_choices.each do |prof| %>
-                        <%# <% binding.pry %> 
-                       
-                          <%= check_box_tag "Proficiency Choices", prof %>
-                          <%= label_tag prof[:item][:name] %><br>
-                        <% end %>
-                        <%= submit_tag('Submit', class: "button") %>
-                      <% end %>
-                          
-                    </section>
+                <section>
+                  <section class="navbar-header">
+                    <p class ="navbar-title">Character Proficiency for <%= params[:index].upcase %></p>
+                    <p class="navbar-subtitle"></p>
                   </section>
+                  <section class="navbar-create-form">
+                    <%= form_tag("/users/char_prof", method: "post") do %>
+                    <p>Proficiency Choices: </p>
+                    <p>Select ONLY two</p>
+                      <% @facade.proficiency_choices.each do |prof| %>
+                    <div>
+                        <%= check_box_tag "proficiency_choices[]", prof[:item][:name] %>
+                        <%= label_tag "proficiency_choices_#{prof[:item][:name]}", prof[:item][:name] %><br>
+                    </div>
+                      <% end %>
+                      <%= submit_tag('Submit', class: "button") %>
+                    <% end %>
+                  </section>
+                </section>
               </p>
+          </div>
+          <div>
+            <u>Inherited Proficiencies for <%= params[:index].upcase %></u><br>
+            <% @facade.proficiencies.each do |prof| %>
+              <%= prof[:name] %><br>
+            <% end %>
           </div>
       </div>
     </div>
