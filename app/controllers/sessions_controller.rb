@@ -56,4 +56,16 @@ class SessionsController < ApplicationController
     
     redirect_to "/users"
   end
+
+  def dummy_test
+    user          = User.find_or_create_by(uid: 1)
+    user.username = "bubba"
+    user.uid      = "123"
+    user.token    = "password123"
+    user.save
+
+    session[:user_id] = user.id
+    
+    redirect_to "/users"
+  end
 end

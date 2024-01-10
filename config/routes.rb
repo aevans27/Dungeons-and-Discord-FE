@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   # get "/users/:user_id"
   get "/user/auth/discord/callback", to: "sessions#create"
 
+  #testing, if you select to join Discord in test
+  get '/api/oauth2/authorize', to: "sessions#dummy_test"
   # get "/login/oauth2/token", to: 
 
 
