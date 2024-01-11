@@ -7,6 +7,8 @@ gem "faraday"
 gem 'omniauth', '~> 1.3.1'
 gem 'omniauth-discord', '~> 1.0.0'
 
+gem 'jquery-rails'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"
 
