@@ -23,6 +23,7 @@
                       <% @facade.proficiency_choices.each do |prof| %>
                     <div>
                         <%= check_box_tag "proficiency_choices[]", prof[:item][:name] %>
+                        <%= hidden_field_tag "class", params[:index] %>
                         <%= label_tag "proficiency_choices_#{prof[:item][:name]}", prof[:item][:name] %><br>
                     </div>
                       <% end %>

@@ -1,0 +1,66 @@
+<% content_for :content do %>
+  <div class="jumbotron text-center">
+      <h1>Dungeons and Discord</h1>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <p>
+                  <%= yield %>
+              </p>
+          </div>
+          <div class="col-lg-6">
+              <p>
+                <section>
+                  <section class="navbar-header">
+                    <p class ="navbar-title">Character Equipment for <%= params[:index].upcase %> </p>
+                    <p class="navbar-subtitle"></p>
+                  </section>
+                  <section class="navbar-create-form">
+                    <%= form_tag("/users/char_prof", method: "post") do %>
+                    <p>Equipment Choices: </p>
+                      <% @facade.starting_equipment_options.each do |prof| %>
+                    <div> 
+                      <% if prof[:from][:options].first[:option_type] && prof[:from][:options].second[:option_type] == "counted_reference" %>
+                        <%= "Choose between #{prof[:desc]}" %>:<br>
+                        <%= radio_button_tag "equipment_choices[]", prof[:from][:options].first[:of][:name] %>
+                        <%= label_tag "equipment_choices_#{prof[:from][:options].first[:of][:name]}", prof[:from][:options].first[:of][:name] %><br>
+                        <%= radio_button_tag "equipment_choices[]", prof[:from][:options].second[:of][:name] %>
+                        <%= label_tag "equipment_choices_#{prof[:from][:options].second[:of][:name]}", prof[:from][:options].second[:of][:name] %><br>
+                      <% elsif prof[:from][:options].first[:option_type] = "counted_reference" && prof[:from][:options].second[:option_type] == "choice" %>
+                        <%= "Choose between #{prof[:desc]}" %>:<br>
+                        <%= radio_button_tag "equipment_choices[]", prof[:from][:options].first[:of][:name] %>
+                        <%= label_tag "equipment_choices_#{prof[:from][:options].first[:of][:name]}", prof[:from][:options].first[:of][:name] %><br>
+                        <%= radio_button_tag "equipment_choices[]", prof[:from][:options].second[:choice][:desc] %>
+                        <%= label_tag "equipment_choices_#{prof[:from][:options].second[:choice][:desc]}", prof[:from][:options].second[:choice][:desc] %><br>
+                      <% elsif prof[:from][:options].first[:option_type] = "choice" && prof[:from][:options].second[:option_type] == "counted_reference" %>
+                        <%= "Choose between #{prof[:desc]}" %>:<br>
+                        <%= radio_button_tag "equipment_choices[]", prof[:from][:options].first[:choice][:desc] %>
+                        <%= label_tag "equipment_choices_#{prof[:from][:options].first[:choice][:desc]}", prof[:from][:options].first[:choice][:desc] %><br>
+                        <%= radio_button_tag "equipment_choices[]", prof[:from][:options].second[:of][:name] %>
+                        <%= label_tag "equipment_choices_#{prof[:from][:options].second[:of][:name]}", prof[:from][:options].second[:of][:name] %><br>
+                      <% else %>
+                        <%= "Choose between #{prof[:desc]}" %>:<br>
+                        <%= radio_button_tag "equipment_choices[]", prof[:from][:options].first[:of][:name] %>
+                        <%= label_tag "equipment_choices_#{prof[:from][:options].first[:of][:name]}", prof[:from][:options].first[:of][:name] %><br>
+                        <%= radio_button_tag "equipment_choices[]", prof[:from][:options].second[:of][:name] %>
+                        <%= label_tag "equipment_choices_#{prof[:from][:options].second[:of][:name]}", prof[:from][:options].second[:of][:name] %><br>
+                      <% end %> 
+                    </div>
+                      <% end%>
+                      <%= submit_tag('Submit', class: "button") %>
+                    <% end %>
+                  </section>
+                </section>
+              </p>
+          </div>
+          <div>
+            <u>Starting Equipment for <%= params[:index].upcase %></u><br>
+            <% @facade.starting_equipment.each do |equipment| %>
+              <%= equipment[:equipment][:name] %><br>
+            <% end %>
+          </div>
+      </div>
+    </div>
+  <% end %>
+  <%= render template: "layouts/application" %>

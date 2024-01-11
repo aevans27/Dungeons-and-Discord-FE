@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   get '/users/char_class', to:"users#char_class"
   get '/users/prof_show', to:"users#prof_show"
   post '/users/char_prof', to:"users#char_prof"
-  
+
+  get '/users/equipment_show', to:"users#equipment_show"
+
 
   # get "/discord", to: "users/omniauth_callbacks_controller#discord"
 

@@ -9,11 +9,21 @@ class UsersController < ApplicationController
   end
 
   def prof_show
+
     @facade = CharClassFacade.char_class(params[:index])
     # @char_class = facade.char_class
   end
 
   def char_prof
+    CharacterFacade.create_character('/api/v1/charclasses/add_prof', {
+      user_id: current_user.id,
+      name: params[:name],
+      char_class: params[:index],
+      race: params[:race],
+      background: 'Acolyte',
+      alignment: params[:alignment]
+    })
+    redirect_to controller: 'users', action: 'equipment_show', index: params[:class]
   end
 
   def char_save
@@ -25,8 +35,14 @@ class UsersController < ApplicationController
       background: 'Acolyte',
       alignment: params[:alignment]
     })
+
     redirect_to controller: 'users', action: 'prof_show', index: params[:index]
+
     # redirect_to "/users/prof_show", index: params[:index]
+  end
+
+  def equipment_show
+    @facade = CharClassFacade.char_class(params[:index])
   end
 
   private
