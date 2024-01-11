@@ -15,12 +15,7 @@ class UsersController < ApplicationController
 
   def char_prof
     CharacterFacade.create_character('/api/v1/charclasses/add_prof', {
-      user_id: current_user.id,
-      name: params[:name],
-      char_class: params[:index],
-      race: params[:race],
-      background: 'Acolyte',
-      alignment: params[:alignment]
+      proficiencies: params[:proficiency_choices]
     })
     redirect_to controller: 'users', action: 'equipment_show', index: params[:class]
   end
@@ -42,6 +37,13 @@ class UsersController < ApplicationController
 
   def equipment_show
     @facade = CharClassFacade.char_class(params[:index])
+  end
+
+  def add_items
+    CharacterFacade.create_character('/api/v1/charclasses/add_items', {
+      starting_equipment_options: params[:equipment_choices]
+    })
+    # redirect_to controller: 'users', action: 'equipment_show', index: params[:class]
   end
 
   private
