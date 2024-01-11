@@ -1,8 +1,5 @@
 require 'rails_helper'
 
-
-# This is a mock test that doesn't work any more but can be utlized to start something *shrug*
-
 RSpec.describe 'Characters class page', type: :feature do
   before(:each) do
     load_test_data
@@ -99,7 +96,7 @@ RSpec.describe 'Characters class page', type: :feature do
           'User-Agent'=>'Faraday v2.9.0'
            }).
          to_return(status: 200, body: wizard_response, headers: {})
-         
+
       visit '/'   
       click_link("Log in with Discord")
       

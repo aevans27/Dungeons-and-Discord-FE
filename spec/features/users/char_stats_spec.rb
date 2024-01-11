@@ -1,11 +1,11 @@
 require 'rails_helper'
 
-RSpec.describe 'Characters equipment page', type: :feature do
+RSpec.describe 'Characters stat page', type: :feature do
   before(:each) do
     load_test_data
   end
-  describe "when I get to /equipment_show" do
-    it "I see a page with a selection of equipment having to do with my class selection " do
+  describe "when I get to /char_stat" do
+    it "I see a page with a selection of stats having to do with my class selection " do
       first_response = File.read('spec/fixtures/first_char.json')
       wizard_response = File.read('spec/fixtures/wizard_class.json')
       error_response = File.read('spec/fixtures/error_prof.json')
@@ -60,6 +60,17 @@ RSpec.describe 'Characters equipment page', type: :feature do
            }).
          to_return(status: 400, body: error_response, headers: {})
 
+         stub_request(:post, "http://localhost:3000/api/v1/charclasses/add_stats").
+         with(
+           body: "{\"user_id\":#{@current_user.id},\"str\":\"1\",\"dex\":\"1\",\"con\":\"1\",\"int\":\"1\",\"wis\":\"1\",\"cha\":\"1\"}",
+           headers: {
+          'Accept'=>'*/*',
+          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+          'Content-Type'=>'application/json',
+          'User-Agent'=>'Faraday v2.9.0'
+           }).
+         to_return(status: 200, body: error_response, headers: {})
+
       visit '/'   
       click_link("Log in with Discord")
       
@@ -98,7 +109,14 @@ RSpec.describe 'Characters equipment page', type: :feature do
       find(:xpath, "(//input[@type='checkbox'])[4]").check
       find(:xpath, "(//input[@type='checkbox'])[6]").check
       click_button('Submit')
+
       expect(current_path).to eq("/users/char_stats")
+      expect(page).to have_content("Wisdom")
+      expect(page).to have_content("Character Stats for WIZARD")
+      expect(page).to have_content("Intelligence")
+      click_button('Submit')
+
+      expect(current_path).to eq("/users/char_show")
     end
   end
 end
