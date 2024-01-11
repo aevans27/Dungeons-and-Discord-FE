@@ -13,7 +13,8 @@ Rails.application.routes.draw do
   get '/users/prof_show', to:"users#prof_show"
   post '/users/char_prof', to:"users#char_prof"
   
-
+  get "/users/char_stats", to:"users#char_stats"
+  post "/users/char_stats", to:"users#stat_save"
   # get "/discord", to: "users/omniauth_callbacks_controller#discord"
 
   # get "/users/:user_id"

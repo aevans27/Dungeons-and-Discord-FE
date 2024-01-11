@@ -30,6 +30,26 @@ class UsersController < ApplicationController
     # redirect_to "/users/prof_show", index: params[:index]
   end
 
+  def char_stats
+  end
+
+  def stat_save
+    new_stats = StatsFacade.create_stats('/api/v1/', {
+      user_id: current_user.id,
+      strength: params[:strength],
+      dexterity: params[:dexterity],
+      constitution: params[:constitution],
+      intelligence: params[:intelligence],
+      wisdom: params[:widsom],
+      charisma: params[:charisma]
+    })
+    redirect_to controller: 'users', action: 'char_show' 
+  end 
+
+  def char_show
+    #need the final call for a character associated with this specific user and character
+  end
+
   private
 
 

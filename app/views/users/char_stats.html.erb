@@ -1,0 +1,136 @@
+<% content_for :content do %>
+  <div class="jumbotron text-center">
+      <h1>Dungeons and Discord</h1>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <p>
+                  <%= yield %>
+              </p>
+          </div>
+          <div class="col-lg-6">
+              <p>
+                  <section>
+                    <section class="navbar-header">
+                       
+                      <p class ="navbar-title">Character Stats for </p>
+                      <p class="navbar-subtitle"></p>
+                    </section>
+                      <section class="character-stats">
+                        <%= form_tag("/users/char_stats", method: "post") do %>
+                          <%= label_tag :strength, 'Strength' %>
+                            <%= number_field_tag :strength, value: 0, id: "strength" %>
+                            <%= button_to "+", "#", id: "add_strength", class: "btn btn-primary" %>
+                            <%= button_to "-", "#", id: "subtract_strength", class: "btn btn-danger" %>
+                          <%= label_tag :dexterity, 'Dexterity' %>
+                            <%= number_field_tag :dexterity, value: 0, id: "dexterity" %>
+                            <%= button_to "+", "#", id: "add_dexterity", class: "btn btn-primary" %>
+                            <%= button_to "-", "#", id: "subtract_dexterity", class: "btn btn-danger" %>
+                          <%= label_tag :constitution, 'Constitution' %>
+                            <%= number_field_tag :constitution, value: 0, id: "constitution" %>
+                            <%= button_to "+", "#", id: "add_constitution", class: "btn btn-primary" %>
+                            <%= button_to "-", "#", id: "subtract_constitution", class: "btn btn-danger" %>
+                          <%= label_tag :intelligence, 'Intelligence' %>
+                            <%= number_field_tag :intelligence, value: 0, id: "intelligence" %>
+                            <%= button_to "+", "#", id: "add_intelligence", class: "btn btn-primary" %>
+                            <%= button_to "-", "#", id: "subtract_intelligence", class: "btn btn-danger" %>
+                          <%= label_tag :wisdom, 'wisdom' %>
+                            <%= number_field_tag :wisdom, value: 0, id: "wisdom" %>
+                            <%= button_to "+", "#", id: "add_wisdom", class: "btn btn-primary" %>
+                            <%= button_to "-", "#", id: "subtract_wisdom", class: "btn btn-danger" %>
+                          <%= label_tag :charisma, 'charisma' %>
+                            <%= number_field_tag :charisma, value: 0, id: "charisma" %>
+                            <%= button_to "+", "#", id: "add_charisma", class: "btn btn-primary" %>
+                            <%= button_to "-", "#", id: "subtract_charisma", class: "btn btn-danger" %>
+                            
+                          <%= submit_tag('Submit', class: "button") %>
+                        <% end %>
+                            
+                      </section>
+                  </section>
+              </p>
+          </div>
+      </div>
+    </div>
+  <% end %>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('#add_strength').click(function() {
+        var currentValue = parseInt($('#strength').val());
+        $('#strength').val(currentValue + 1);
+    });
+
+    $('#subtract_strength').click(function() {
+        var currentValue = parseInt($('#strength').val());
+        if (currentValue > 0) {
+          $('#strength').val(currentValue - 1);
+        }
+    });
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('#add_dexterity').click(function() {
+        var currentValue = parseInt($('#dexterity').val());
+        $('#dexterity').val(currentValue + 1);
+    });
+
+    $('#subtract_dexterity').click(function() {
+        var currentValue = parseInt($('#dexterity').val());
+        if (currentValue > 0) {
+          $('#dexterity').val(currentValue - 1);
+        }
+    });
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('#add_constitution').click(function() {
+        var currentValue = parseInt($('#constitution').val());
+        $('#constitution').val(currentValue + 1);
+    });
+
+    $('#subtract_constitution').click(function() {
+        var currentValue = parseInt($('#constitution').val());
+        if (currentValue > 0) {
+          $('#constitution').val(currentValue - 1);
+        }
+    });
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('#add_intelligence').click(function() {
+        var currentValue = parseInt($('#intelligence').val());
+        $('#intelligence').val(currentValue + 1);
+    });
+
+    $('#subtract_intelligence').click(function() {
+        var currentValue = parseInt($('#intelligence').val());
+        if (currentValue > 0) {
+          $('#intelligence').val(currentValue - 1);
+        }
+    });
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('#add_wisdom').click(function() {
+        var currentValue = parseInt($('#wisdom').val());
+        $('#wisdom').val(currentValue + 1);
+    });
+
+    $('#subtract_wisdom').click(function() {
+        var currentValue = parseInt($('#wisdom').val());
+        if (currentValue > 0) {
+          $('#wisdom').val(currentValue - 1);
+        }
+    });
+  <script type="text/javascript">
+    $(document).ready(function() {
+    $('#add_charisma').click(function() {
+        var currentValue = parseInt($('#charisma').val());
+        $('#charisma').val(currentValue + 1);
+    });
+
+    $('#subtract_charisma').click(function() {
+        var currentValue = parseInt($('#charisma').val());
+        if (currentValue > 0) {
+          $('#charisma').val(currentValue - 1);
+        }
+    });
+    </script>
+  <%= render template: "layouts/application" %>
