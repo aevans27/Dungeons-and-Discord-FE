@@ -10,6 +10,8 @@ gem 'omniauth-discord'
 gem 'auto-session-timeout'
 gem 'draper'
 
+gem 'jquery-rails'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"
 
@@ -71,7 +73,7 @@ group :development, :test do
   # gem 'orderly'
    gem 'pry'
    gem 'bootstrap', '~> 5.3.2'
-   gem 'jquery-rails'
+  
    gem 'popper_js', '~> 2.11.8'
   # gem 'rspec-rails'
   # gem 'shoulda-matchers'
