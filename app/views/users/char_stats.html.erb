@@ -19,30 +19,42 @@
                     </section>
                       <section class="character-stats">
                         <%= form_tag("/users/char_stats", method: "post") do %>
+                        <div class="form-group">
                           <%= label_tag :strength, 'Strength' %>
-                            <%= number_field_tag :strength, value: 0, id: "strength" %>
-                            <%= button_to "+", "#", id: "add_strength", class: "btn btn-primary" %>
-                            <%= button_to "-", "#", id: "subtract_strength", class: "btn btn-danger" %>
+                          <div class="col-sm-10">
+                            <%= number_field_tag :strength, nil, min: 1, max: 20, value: 1, id: "strength" %>
+                          </div>
+                        </div>
+                        <div class="form-group">
                           <%= label_tag :dexterity, 'Dexterity' %>
-                            <%= number_field_tag :dexterity, value: 0, id: "dexterity" %>
-                            <%= button_to "+", "#", id: "add_dexterity", class: "btn btn-primary" %>
-                            <%= button_to "-", "#", id: "subtract_dexterity", class: "btn btn-danger" %>
+                           <div class="col-sm-10">
+                            <%= number_field_tag :dexterity, nil, min: 1, max: 20, value: 1, id: "dexterity" %>
+                           </div>
+                        </div>
+                        <div class="form-group">
                           <%= label_tag :constitution, 'Constitution' %>
-                            <%= number_field_tag :constitution, value: 0, id: "constitution" %>
-                            <%= button_to "+", "#", id: "add_constitution", class: "btn btn-primary" %>
-                            <%= button_to "-", "#", id: "subtract_constitution", class: "btn btn-danger" %>
+                           <div class="col-sm-10">
+                            <%= number_field_tag :constitution, nil, min: 1, max: 20, value: 1, id: "constitution" %>
+                           </div>
+                        </div>
+                       <div class="form-group">
                           <%= label_tag :intelligence, 'Intelligence' %>
-                            <%= number_field_tag :intelligence, value: 0, id: "intelligence" %>
-                            <%= button_to "+", "#", id: "add_intelligence", class: "btn btn-primary" %>
-                            <%= button_to "-", "#", id: "subtract_intelligence", class: "btn btn-danger" %>
-                          <%= label_tag :wisdom, 'wisdom' %>
-                            <%= number_field_tag :wisdom, value: 0, id: "wisdom" %>
-                            <%= button_to "+", "#", id: "add_wisdom", class: "btn btn-primary" %>
-                            <%= button_to "-", "#", id: "subtract_wisdom", class: "btn btn-danger" %>
-                          <%= label_tag :charisma, 'charisma' %>
-                            <%= number_field_tag :charisma, value: 0, id: "charisma" %>
-                            <%= button_to "+", "#", id: "add_charisma", class: "btn btn-primary" %>
-                            <%= button_to "-", "#", id: "subtract_charisma", class: "btn btn-danger" %>
+                           <div class="col-sm-10">
+                            <%= number_field_tag :intelligence, nil, min: 1, max: 20, value: 1, id: "intelligence" %>
+                           </div>
+                       </div>
+                       <div class="form-group">
+                          <%= label_tag :wisdom, 'Wisdom' %>
+                           <div class="col-sm-10">
+                            <%= number_field_tag :wisdom, nil, min: 1, max: 20, value: 1, id: "wisdom" %>
+                           </div>
+                       </div>
+                       <div class="form-group">
+                          <%= label_tag :charisma, 'Charisma' %>
+                           <div class="col-sm-10">
+                            <%= number_field_tag :charisma, nil, min: 1, max: 20, value: 1, id: "charisma" %>
+                           </div>
+                       </div>
                             
                           <%= submit_tag('Submit', class: "button") %>
                         <% end %>

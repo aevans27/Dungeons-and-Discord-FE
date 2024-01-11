@@ -47,21 +47,22 @@ class UsersController < ApplicationController
   end
 
   def char_stats
-    require 'pry';binding.pry
+    
     @facade = CharClassFacade.char_class(params[:index])
   end
 
   def stat_save
+    require 'pry';binding.pry
     new_stats = StatsFacade.create_stats('/api/v1/charclasses/add_stats', {
       user_id: current_user.id,
-      strength: params[:strength],
-      dexterity: params[:dexterity],
-      constitution: params[:constitution],
-      intelligence: params[:intelligence],
-      wisdom: params[:widsom],
-      charisma: params[:charisma]
+      str: params[:strength],
+      dex: params[:dexterity],
+      con: params[:constitution],
+      int: params[:intelligence],
+      wis: params[:wisdom],
+      cha: params[:charisma]
     })
-    redirect_to controller: 'users', action: 'char_show' 
+    # redirect_to controller: 'users', action: 'char_show' 
   end 
 
   def char_show
