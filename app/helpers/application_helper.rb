@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def class_list
-    ['barbarian', 'bard', 'cleric', 'druid', 'fighter', 'monk', 'paladin', 'ranger', 'rogue', 'sorcerer', 'warlock', 'wizard' ]
+    ['barbarian', 'bard', 'monk', 'ranger', 'wizard' ]
   end
   
   def race_list

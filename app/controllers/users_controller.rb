@@ -14,10 +14,13 @@ class UsersController < ApplicationController
   end
 
   def char_prof
+    CharacterFacade.create_character('/api/v1/charclasses/add_prof', {
+      proficiencies: params[:proficiency_choices]
+    })
+    redirect_to controller: 'users', action: 'equipment_show', index: params[:class]
   end
 
   def char_save
-    # binding.pry
     new_char = CharacterFacade.create_character('/api/v1/characters', {
       user_id: current_user.id,
       name: params[:name],
@@ -26,8 +29,21 @@ class UsersController < ApplicationController
       background: 'Acolyte',
       alignment: params[:alignment]
     })
+
     redirect_to controller: 'users', action: 'prof_show', index: params[:index]
+
     # redirect_to "/users/prof_show", index: params[:index]
+  end
+
+  def equipment_show
+    @facade = CharClassFacade.char_class(params[:index])
+  end
+
+  def add_items
+    CharacterFacade.create_character('/api/v1/charclasses/add_items', {
+      starting_equipment_options: params[:equipment_choices]
+    })
+    # redirect_to controller: 'users', action: 'equipment_show', index: params[:class]
   end
 
   private
