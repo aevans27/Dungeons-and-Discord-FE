@@ -51,6 +51,10 @@ GEM
       globalid (>= 0.3.6)
     activemodel (7.0.8)
       activesupport (= 7.0.8)
+    activemodel-serializers-xml (1.0.2)
+      activemodel (> 5.x)
+      activesupport (> 5.x)
+      builder (~> 3.1)
     activerecord (7.0.8)
       activemodel (= 7.0.8)
       activesupport (= 7.0.8)
@@ -104,6 +108,13 @@ GEM
     date (3.3.4)
     diff-lcs (1.5.0)
     docile (1.4.0)
+    draper (4.0.2)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
+      activemodel-serializers-xml (>= 1.0)
+      activesupport (>= 5.0)
+      request_store (>= 1.0)
+      ruby2_keywords
     erubi (1.12.0)
     execjs (2.9.1)
     faraday (2.9.0)
@@ -226,6 +237,8 @@ GEM
       zeitwerk (~> 2.5)
     rake (13.1.0)
     regexp_parser (2.9.0)
+    request_store (1.5.1)
+      rack (>= 1.4)
     rexml (3.2.6)
     rspec-core (3.12.2)
       rspec-support (~> 3.12.0)
@@ -244,6 +257,7 @@ GEM
       rspec-mocks (~> 3.12)
       rspec-support (~> 3.12)
     rspec-support (3.12.1)
+    ruby2_keywords (0.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -318,6 +332,7 @@ DEPENDENCIES
   bootstrap (~> 5.3.2)
   capybara
   coffee-rails
+  draper
   faraday
   font-awesome-rails
   importmap-rails
