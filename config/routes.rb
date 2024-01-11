@@ -19,9 +19,10 @@ Rails.application.routes.draw do
   
   get "active",  to: "sessions#active"
   get "timeout", to: "sessions#timeout"
-  
+
   get "/users/char_stats", to:"users#char_stats"
   post "/users/char_stats", to:"users#stat_save"
+  get "/users/char_show", to:"users#char_show"
   # get "/discord", to: "users/omniauth_callbacks_controller#discord"
 
   # get "/users/:user_id"
