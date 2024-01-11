@@ -1,11 +1,11 @@
 require 'rails_helper'
 
-RSpec.describe 'Characters profession page', type: :feature do
+RSpec.describe 'Characters equipment page', type: :feature do
   before(:each) do
     load_test_data
   end
-  describe "when I get to /prof_create" do
-    it "I see a page with a selection of proffession having to do with my class selection " do
+  describe "when I get to /equipment_show" do
+    it "I see a page with a selection of equipment having to do with my class selection " do
       first_response = File.read('spec/fixtures/first_char.json')
       wizard_response = File.read('spec/fixtures/wizard_class.json')
       error_response = File.read('spec/fixtures/error_prof.json')
@@ -79,6 +79,14 @@ RSpec.describe 'Characters profession page', type: :feature do
       click_button('Submit')
 
       expect(current_path).to eq("/users/equipment_show")
+      expect(page).to have_content("Choose between (a) a quarterstaff or (b) a dagger:")
+      expect(page).to have_content("Character Equipment for WIZARD")
+      expect(page).to have_content("Equipment Choices (Choose one of each):")
+
+      find("input[type='checkbox']", match: :first).check
+      find(:xpath, "(//input[@type='checkbox'])[3]").check
+      find(:xpath, "(//input[@type='checkbox'])[5]").check
+      click_button('Submit')
     end
   end
 end

@@ -15,5 +15,6 @@ class CharacterService
       req.headers['Content-Type'] = 'application/json'
     end
     JSON.parse(response.body, symbolize_names: true)
+    # require 'pry';binding.pry
   end
 end
