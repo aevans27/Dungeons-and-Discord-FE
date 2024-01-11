@@ -13,7 +13,7 @@ RSpec.describe 'Home', type: :feature do
 
     it 'displays a button to create a new user' do
       visit '/'
-      expect(page).to have_button('Create New User')
+      expect(page).to have_link('Log in with Discord')
     end
 
     # it 'sign in using credentials' do
@@ -29,6 +29,4 @@ RSpec.describe 'Home', type: :feature do
     #   expect(page).to have_link('Go back to Landing Page', href: root_path)
     # end
   end
-
- 
 end
