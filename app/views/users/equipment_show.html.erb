@@ -18,6 +18,7 @@
                   </section>
                   <section class="navbar-create-form">
                     <%= form_tag("/users/add_items", method: "post") do %>
+                      <%= hidden_field_tag "index", params[:index] %>
                     <p><u>Equipment Choices (Choose one of each): </u></p>
                       <% @facade.starting_equipment_options.each do |prof| %>
                     <div> 
