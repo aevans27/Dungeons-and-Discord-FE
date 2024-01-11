@@ -5,14 +5,20 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'home#index'
 
-  get '/users', to:"users#show"
-  get '/users/char_create', to:"users#char_create"
+  get '/users', to: "users#show"
+  get '/users/char_create', to: "users#char_create"
   post '/users/char_create', to:"users#char_save"
 
-  get '/users/char_class', to:"users#char_class"
-  get '/users/prof_show', to:"users#prof_show"
-  post '/users/char_prof', to:"users#char_prof"
+
+  get '/users/char_class', to: "users#char_class"
+  get '/users/prof_show', to: "users#prof_show"
+  post '/users/char_prof', to: "users#char_prof"
+
+  get '/users/equipment_show', to:"users#equipment_show"
+  post '/users/add_items', to: "users#add_items"
   
+  get "active",  to: "sessions#active"
+  get "timeout", to: "sessions#timeout"
   get "/users/char_stats", to:"users#char_stats"
   post "/users/char_stats", to:"users#stat_save"
   # get "/discord", to: "users/omniauth_callbacks_controller#discord"

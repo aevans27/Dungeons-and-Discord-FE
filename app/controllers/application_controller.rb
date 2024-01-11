@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-
+  auto_session_timeout 5.minutes
   helper_method :current_user
 
   def current_user

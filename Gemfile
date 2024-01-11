@@ -4,8 +4,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.2.2"
 gem "faraday"
 
-gem 'omniauth', '~> 1.3.1'
-gem 'omniauth-discord', '~> 1.0.0'
+gem 'omniauth'
+gem 'omniauth-discord'
+
+gem 'auto-session-timeout'
 
 gem 'jquery-rails'
 
