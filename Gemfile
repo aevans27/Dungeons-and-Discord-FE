@@ -72,7 +72,7 @@ group :development, :test do
   # gem 'orderly'
    gem 'pry'
    gem 'bootstrap', '~> 5.3.2'
-   gem 'jquery-rails'
+  
    gem 'popper_js', '~> 2.11.8'
   # gem 'rspec-rails'
   # gem 'shoulda-matchers'
