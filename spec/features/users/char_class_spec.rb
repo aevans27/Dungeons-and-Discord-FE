@@ -32,17 +32,39 @@ RSpec.describe 'Characters class page', type: :feature do
       click_button('Submit')
 
 
-      # expect(current_path).to eq("/users/char_show")
+      expect(current_path).to eq("/users/prof_show")
 
-      # expect(page).to have_content("Saving Throws")
-      # save_and_open_page
-      # within(first(".character")) do
-      #   expect(page).to have_content("Name: Azula")
-      #   expect(page).to have_content("Allies:\nHis")
-      #   expect(page).to have_content("Enemies:\nIroh Zuko Kuei Long Feng Mai Ty Lee Ursa")
-      #   expect(page).to have_content("Affiliations: Azula's team (formerly) Dai Li (formerly) Fire Nation Fire Nation Royal Family Fire Warriors Royal Fire Academy for Girls (formerly)")
-      # end
-  
+      expect(page).to have_content("Proficiency Choices")
+    end
+
+    it "return to welcome view " do
+      visit '/'   
+      click_link("Log in with Discord")
+      
+      expect(page).to have_content("Welcome, bubba to Dungeons and Discord!!")
+
+      expect(page).to have_content("New Character") 
+      
+      click_link("New Character")
+      
+      expect(page).to have_content("Name")
+      expect(page).to have_field(:name)
+
+      expect(page).to have_content("Select Class")
+      expect(page).to have_field(:index)
+
+      fill_in :name, with: 'Shrek'
+      select('wizard', from: 'index')
+      select('tiefling', from: 'race')
+      select('lawful good', from: 'alignment')
+      click_button('Submit')
+
+
+      expect(current_path).to eq("/users/prof_show")
+
+      expect(page).to have_content("Proficiency Choices")
+
+      click_link('Return to main page')
     end
   end
 end

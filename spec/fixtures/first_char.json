@@ -1,0 +1,244 @@
+{
+  "data": [
+      {
+          "id": "34",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "barbarian",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "39",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "wizard",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "46",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "warlock",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "47",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "barbarian",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "48",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "barbarian",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "51",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "barbarian",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "52",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "barbarian",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "53",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "barbarian",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "54",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "barbarian",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "55",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "barbarian",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "56",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "druid",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "57",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "cleric",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "58",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "ranger",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "59",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "barbarian",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "60",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "barbarian",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "61",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "barbarian",
+              "race": null,
+              "alignment": null,
+              "background": null,
+              "name": null
+          }
+      },
+      {
+          "id": "68",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "paladin",
+              "race": "dragonborn",
+              "alignment": "neutral evil",
+              "background": "Acolyte",
+              "name": "Timmy"
+          }
+      },
+      {
+          "id": "74",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "wizard",
+              "race": "dragonborn",
+              "alignment": "lawful good",
+              "background": "Acolyte",
+              "name": "dddd"
+          }
+      },
+      {
+          "id": "87",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "wizard",
+              "race": "dragonborn",
+              "alignment": "lawful good",
+              "background": "Acolyte",
+              "name": "lll"
+          }
+      },
+      {
+          "id": "121",
+          "type": "character",
+          "attributes": {
+              "user_id": 1,
+              "char_class": "monk",
+              "race": "dragonborn",
+              "alignment": "lawful good",
+              "background": "Acolyte",
+              "name": "ffffff"
+          }
+      }
+  ]
+}

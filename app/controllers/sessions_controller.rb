@@ -1,21 +1,9 @@
-require 'nokogiri' 
-
 class SessionsController < ApplicationController
   def create
     client_id = Rails.application.credentials.discord[:client_id]
     client_secret = Rails.application.credentials.discord[:secret]
     redirect_uri = "http://[::1]:5000/user/auth/discord/callback"
     code = params[:code]
-  
-    # conn = Faraday.new(url: 'https://discord.com', headers: {
-    #   'Content-Type': 'application/x-www-form-urlencoded'
-    # })
-    
-    # response = conn.post('/api/oauth2/token') do |req|
-    #   req.params['code'] = code
-    #   req.params['client_id'] = client_id
-    #   req.params['client_secret'] = client_secret
-    # end
 
     data = {
       "grant_type" => "authorization_code",
@@ -44,7 +32,6 @@ class SessionsController < ApplicationController
     url2 = 'https://discord.com/api/users/@me'
     response = conn.get(url2)
     data = JSON.parse(response.body, symbolize_names: true)
-    # binding.pry
 
     user          = User.find_or_create_by(uid: data[:id])
     user.username = data[:username]
@@ -53,7 +40,6 @@ class SessionsController < ApplicationController
     user.save
 
     session[:user_id] = user.id
-    
     redirect_to "/users"
   end
 
