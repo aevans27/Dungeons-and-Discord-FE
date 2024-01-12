@@ -22,7 +22,6 @@ class UsersController < ApplicationController
 
   def prof_show
     @facade = CharClassFacade.char_class(params[:index])
-    # @char_class = facade.char_class
   end
 
   def char_prof
@@ -63,7 +62,6 @@ class UsersController < ApplicationController
 
   def char_show
     @character = CharacterFacade.get_character(params[:char_id].to_i)
-    require 'pry'; binding.pry
   end
 
   private

@@ -25,7 +25,7 @@
                     <div> 
                       <% if prof[:from][:options].first[:option_type] && prof[:from][:options].second[:option_type] == "counted_reference" %>
                         <%= "Choose between #{prof[:desc]}" %>:<br>
-                        <%= check_box_tag "equipment_choices", prof[:from][:options].first[:of][:name] %>
+                        <%= check_box_tag "equipment_choices[]", prof[:from][:options].first[:of][:name] %>
                         <%= label_tag "equipment_choices_#{prof[:from][:options].first[:of][:name]}", prof[:from][:options].first[:of][:name] %><br>
                         <%= check_box_tag "equipment_choices[]", prof[:from][:options].second[:of][:name] %>
                         <%= label_tag "equipment_choices_#{prof[:from][:options].second[:of][:name]}", prof[:from][:options].second[:of][:name] %><br>
