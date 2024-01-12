@@ -15,4 +15,8 @@ class CharacterService
     end
     JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.delete_at_url(char_id)
+    response = conn.delete("/api/v1/characters/#{char_id}")
+  end
 end
