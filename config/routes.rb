@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get "/users/:char_id/char_stats", to:"users#char_stats"
   post "/users/:char_id/char_stats", to:"users#stat_save"
   get "/users/:char_id/char_show", to:"users#char_show"
+  delete "/users/char_delete/:char_id", to:"users#char_delete"
   
   get "/user/auth/discord/callback", to: "sessions#create"
   
