@@ -9,56 +9,56 @@ RSpec.describe 'Characters equipment page', type: :feature do
       first_response = File.read('spec/fixtures/first_char.json')
       wizard_response = File.read('spec/fixtures/wizard_class.json')
       error_response = File.read('spec/fixtures/error_prof.json')
-      stub_request(:get, "http://localhost:3000/api/v1/characters?user_id=#{@current_user.id}").
-         with(
-           headers: {
-          'Accept'=>'*/*',
-          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'User-Agent'=>'Faraday v2.9.0'
-           }).
-         to_return(status: 200, body: first_response, headers: {})
+      # stub_request(:get, "http://localhost:3000/api/v1/characters?user_id=#{@current_user.id}").
+      #    with(
+      #      headers: {
+      #     'Accept'=>'*/*',
+      #     'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+      #     'User-Agent'=>'Faraday v2.9.0'
+      #      }).
+      #    to_return(status: 200, body: first_response, headers: {})
 
-         stub_request(:post, "http://localhost:3000/api/v1/characters").
-         with(
-           body: "{\"user_id\":#{@current_user.id},\"name\":\"Shrek\",\"char_class\":\"wizard\",\"race\":\"tiefling\",\"background\":\"Acolyte\",\"alignment\":\"lawful good\"}",
-           headers: {
-          'Accept'=>'*/*',
-          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'Content-Type'=>'application/json',
-          'User-Agent'=>'Faraday v2.9.0'
-           }).
-         to_return(status: 200, body: "[]", headers: {})
+      #    stub_request(:post, "http://localhost:3000/api/v1/characters").
+      #    with(
+      #      body: "{\"user_id\":#{@current_user.id},\"name\":\"Shrek\",\"char_class\":\"wizard\",\"race\":\"tiefling\",\"background\":\"Acolyte\",\"alignment\":\"lawful good\"}",
+      #      headers: {
+      #     'Accept'=>'*/*',
+      #     'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+      #     'Content-Type'=>'application/json',
+      #     'User-Agent'=>'Faraday v2.9.0'
+      #      }).
+      #    to_return(status: 200, body: "[]", headers: {})
 
-         stub_request(:get, "http://localhost:3000/api/v1/charclasses/wizard").
-         with(
-           headers: {
-          'Accept'=>'*/*',
-          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'User-Agent'=>'Faraday v2.9.0'
-           }).
-         to_return(status: 200, body: wizard_response, headers: {})
+      #    stub_request(:get, "http://localhost:3000/api/v1/charclasses/wizard").
+      #    with(
+      #      headers: {
+      #     'Accept'=>'*/*',
+      #     'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+      #     'User-Agent'=>'Faraday v2.9.0'
+      #      }).
+      #    to_return(status: 200, body: wizard_response, headers: {})
 
-         stub_request(:post, "http://localhost:3000/api/v1/charclasses/add_prof").
-         with(
-           body: "{\"proficiencies\":[\"Skill: Arcana\",\"Skill: History\"]}",
-           headers: {
-          'Accept'=>'*/*',
-          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'Content-Type'=>'application/json',
-          'User-Agent'=>'Faraday v2.9.0'
-           }).
-         to_return(status: 400, body: error_response, headers: {})
+      #    stub_request(:post, "http://localhost:3000/api/v1/charclasses/add_prof").
+      #    with(
+      #      body: "{\"proficiencies\":[\"Skill: Arcana\",\"Skill: History\"]}",
+      #      headers: {
+      #     'Accept'=>'*/*',
+      #     'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+      #     'Content-Type'=>'application/json',
+      #     'User-Agent'=>'Faraday v2.9.0'
+      #      }).
+      #    to_return(status: 400, body: error_response, headers: {})
 
-         stub_request(:post, "http://localhost:3000/api/v1/charclasses/add_items").
-         with(
-           body: "{\"starting_equipment_options\":[\"Dagger\",\"arcane focus\",\"Explorer's Pack\"]}",
-           headers: {
-          'Accept'=>'*/*',
-          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'Content-Type'=>'application/json',
-          'User-Agent'=>'Faraday v2.9.0'
-           }).
-         to_return(status: 400, body: error_response, headers: {})
+      #    stub_request(:post, "http://localhost:3000/api/v1/charclasses/add_items").
+      #    with(
+      #      body: "{\"starting_equipment_options\":[\"Dagger\",\"arcane focus\",\"Explorer's Pack\"]}",
+      #      headers: {
+      #     'Accept'=>'*/*',
+      #     'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+      #     'Content-Type'=>'application/json',
+      #     'User-Agent'=>'Faraday v2.9.0'
+      #      }).
+      #    to_return(status: 400, body: error_response, headers: {})
 
       visit '/'   
       click_link("Log in with Discord")
