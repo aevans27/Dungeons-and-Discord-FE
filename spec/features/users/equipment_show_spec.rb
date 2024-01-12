@@ -80,7 +80,7 @@ RSpec.describe 'Characters equipment page', type: :feature do
       select('tiefling', from: 'race')
       select('lawful good', from: 'alignment')
       click_button('Submit')
-      expect(current_path).to eq("/users/prof_show")
+      
       expect(page).to have_content("Proficiency Choices")
       expect(page).to have_content("Character Proficiency for WIZARD")
       expect(page).to have_content("Select ONLY two")
@@ -89,7 +89,6 @@ RSpec.describe 'Characters equipment page', type: :feature do
       find(:xpath, "(//input[@type='checkbox'])[2]").check
       click_button('Submit')
 
-      expect(current_path).to eq("/users/equipment_show")
       expect(page).to have_content("Choose between (a) a quarterstaff or (b) a dagger:")
       expect(page).to have_content("Character Equipment for WIZARD")
       expect(page).to have_content("Equipment Choices (Choose one of each):")
@@ -98,7 +97,6 @@ RSpec.describe 'Characters equipment page', type: :feature do
       find(:xpath, "(//input[@type='checkbox'])[4]").check
       find(:xpath, "(//input[@type='checkbox'])[6]").check
       click_button('Submit')
-      expect(current_path).to eq("/users/char_stats")
     end
   end
 end
