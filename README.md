@@ -54,6 +54,6 @@ discord:
 
 
 ### Web View
-![home-page](/assets/images/home-page.png)
-![char-prof](/assets/images/char-prof.png)
-![char-show](/assets/images/char-show.png)
+![home-page](https://github.com/aevans27/Dungeons-and-Discord-FE/assets/132625822/87c505f8-3040-4fb5-bba6-0c48b25e54ae)
+![char-prof](https://github.com/aevans27/Dungeons-and-Discord-FE/assets/132625822/bc9df701-c155-4ff4-bb08-2e87a7e89029)
+![char-show](https://github.com/aevans27/Dungeons-and-Discord-FE/assets/132625822/14de28d6-9123-4fd1-aa7d-f4d2e40e89db)
