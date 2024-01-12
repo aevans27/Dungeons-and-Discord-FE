@@ -55,12 +55,12 @@
                   </section>
                 </section>
               </p>
-          </div>
           <div>
             <u>Starting Equipment for <%= params[:index].upcase %></u><br>
             <% @facade.starting_equipment.each do |equipment| %>
               <%= equipment[:equipment][:name] %><br>
             <% end %>
+          </div>
           </div>
       </div>
     </div>
