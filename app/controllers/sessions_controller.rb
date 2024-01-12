@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
     if params[:code] 
       client_id = Rails.application.credentials.discord[:client_id]
       client_secret = Rails.application.credentials.discord[:secret]
-      redirect_uri = "http://[::1]:5000/user/auth/discord/callback"
+      redirect_uri = "https://dungeons-and-discord-fe-47hs.onrender.com/user/auth/discord/callback"
       code = params[:code]
   
       data = {
