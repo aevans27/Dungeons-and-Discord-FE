@@ -1,6 +1,6 @@
 class CharacterService
   def self.conn
-    Faraday.new(url: 'http://localhost:3000')
+    Faraday.new(url: 'https://dungeons-and-discord-be-21zy.onrender.com')
   end
   
   def self.get_url(url)
