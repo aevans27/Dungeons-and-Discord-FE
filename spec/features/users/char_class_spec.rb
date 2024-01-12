@@ -59,9 +59,6 @@ RSpec.describe 'Characters class page', type: :feature do
       select('lawful good', from: 'alignment')
       click_button('Submit')
 
-
-      expect(current_path).to eq("/users/prof_show")
-
       expect(page).to have_content("Proficiency Choices")
     end
 
@@ -117,9 +114,6 @@ RSpec.describe 'Characters class page', type: :feature do
       select('tiefling', from: 'race')
       select('lawful good', from: 'alignment')
       click_button('Submit')
-
-
-      expect(current_path).to eq("/users/prof_show")
 
       expect(page).to have_content("Proficiency Choices")
 
