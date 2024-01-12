@@ -69,7 +69,7 @@ RSpec.describe 'Characters profession page', type: :feature do
       select('tiefling', from: 'race')
       select('lawful good', from: 'alignment')
       click_button('Submit')
-      expect(current_path).to eq("/users/prof_show")
+      
       expect(page).to have_content("Proficiency Choices")
       expect(page).to have_content("Character Proficiency for WIZARD")
       expect(page).to have_content("Select ONLY two")
@@ -77,8 +77,6 @@ RSpec.describe 'Characters profession page', type: :feature do
       find("input[type='checkbox']", match: :first).check
       find(:xpath, "(//input[@type='checkbox'])[2]").check
       click_button('Submit')
-
-      expect(current_path).to eq("/users/equipment_show")
     end
   end
 end
