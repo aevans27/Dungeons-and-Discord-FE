@@ -5,7 +5,6 @@ class UsersController < ApplicationController
   end
 
   def char_create
-    # new_char = CharacterFacade.create
   end
   
   def char_save
@@ -25,7 +24,7 @@ class UsersController < ApplicationController
   end
 
   def char_prof
-    CharacterFacade.create_character('/api/v1/charclasses/add_prof', {
+    CharacterFacade.create_character("/api/v1/charclasses/#{params[:char_id]}/add_prof", {
       proficiencies: params[:proficiency_choices]
     })
     redirect_to controller: 'users', action: 'equipment_show', index: params[:index], char_id: params[:char_id]
@@ -36,7 +35,7 @@ class UsersController < ApplicationController
   end
 
   def add_items
-    CharacterFacade.create_character('/api/v1/charclasses/add_items', {
+    CharacterFacade.create_character("/api/v1/charclasses/#{params[:char_id]}/add_items", {
       starting_equipment_options: params[:equipment_choices]
     })
     redirect_to controller: 'users', action: 'char_stats', index: params[:index], char_id: params[:char_id]
@@ -47,8 +46,7 @@ class UsersController < ApplicationController
   end
 
   def stat_save
-   
-    new_stats = StatsFacade.create_stats('/api/v1/charclasses/add_stats', {
+    new_stats = StatsFacade.create_stats("/api/v1/charclasses/#{params[:char_id]}/add_stats", {
       user_id: current_user.id,
       str: params[:strength],
       dex: params[:dexterity],
