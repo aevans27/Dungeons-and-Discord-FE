@@ -27,7 +27,7 @@ Link to [Back-End Microservice](https://github.com/XanderHendry/dungeons_and_dis
 ## Project Description
 Tired of having to lug around a sheet of paper with all of characters attributes for your Dungeons and Dragons games? You get all the way to the Dungeon Master's lair and forgot your character sheet? Cry no longer, weary traveler, Dungeons and Discord is here! Utilizing Discord to log in to the app, users are able to create characters by naming the character and selecting a class. Once the character has been created, this character is stored for you, so you don't have to remember that pesky piece of paper again! Players can also utilize Discord's server creation so a DM can host a game over the voice channel and a session can happen from the comfort of your home, car, anywhere with stable connection to the internet!
 
-This repository is the front end of the project, which requires a Discord account to log-in. Once a user is logged in, they can create DnD characters which are saved and displayed on their user show page.
+This repository is the front end of the project, which requires a Discord account to log-in. Once a user is logged in, they can create DnD characters which are saved and displayed on their user show page. The [back end](https://github.com/XanderHendry/dungeons_and_discord_be) serves as data storage and external API calls for the project. 
 
 ## OAuth
 Dungeons and Discord leverages `omniauth` and `omniauth-discord` to handle an OAuth2.0 connection. OAuth2.0 is used for authentication from Discord, allowing the log-in of users and is required to use Dungeons and Discord.
