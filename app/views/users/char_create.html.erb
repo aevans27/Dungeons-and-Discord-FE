@@ -17,7 +17,7 @@
                       <p class="navbar-subtitle">Build a character and get to playing your game with your pals!</p>
                     </section>
                     <section class="navbar-create-form">
-                      <%= form_tag("/users/char_create", method: "post") do %>
+                      <%= form_tag("/users/#{:char_id}/char_create", method: "post") do %>
                         <%= label_tag :name, 'Name' %>
                         <%= text_field_tag :name %>
                         <%= label_tag :index, 'Select Class' %>
