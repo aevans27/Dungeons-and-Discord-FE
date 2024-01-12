@@ -9,4 +9,9 @@ class CharacterFacade
       Character.new(result)
     end
   end
+
+  def self.get_character(character_id)
+    json_response = CharacterService.get_url("/api/v1/characters/#{character_id}")
+    Character.new(json_response[:data])
+  end
 end

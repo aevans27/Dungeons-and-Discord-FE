@@ -1,0 +1,82 @@
+<!-- app/views/characters/show.html.erb -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Info Sheet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    p {
+      margin-bottom: 8px;
+    }
+
+    .proficiencies {
+      margin-top: 20px;
+    }
+
+    .items {
+      margin-top: 20px;
+    }
+
+    .stats {
+      margin-top: 20px;
+    }
+
+    /* Add more styles as needed */
+  </style>
+</head>
+<body>
+  <h1><u>Character Information</u></h1>
+
+
+  <h2><%= @character.name %></h2>
+  <p><u>Race</u>: <%= @character.race %></p>
+  <p><u>Class</u>: <%= @character.char_class %></p>
+  <p><u>Background</u>: <%= @character.background %></p>
+  <p><u>Alignment</u>: <%= @character.alignment %></p>
+
+  <div class="proficiencies">
+    <h2><u>Proficiencies</u></h2>
+    <ul>
+      <% @character.proficiencies.each do |proficiency| %>
+        <li><%= proficiency[:proficiency_name] %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="items">
+    <h2><u>Items</u></h2>
+    <ul>
+      <% @character.items.each do |item| %>
+        <li><%= item[:item_name] %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="stats">
+    <h2><u>Stats</u></h2>
+    <p>Strength: <%= @character.stats[:str] %></p>
+    <p>Dexterity: <%= @character.stats[:dex] %></p>
+    <p>Constitution: <%= @character.stats[:con] %></p>
+    <p>Intelligence: <%= @character.stats[:int] %></p>
+    <p>Wisdom: <%= @character.stats[:wis] %></p>
+    <p>Charisma: <%= @character.stats[:cha] %></p>
+    <p>Max Hit Points: <%= @character.stats[:max_hit_point] %></p>
+  </div>
+</body>
+</html>
