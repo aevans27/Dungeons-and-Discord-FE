@@ -14,4 +14,8 @@ class CharacterFacade
     json_response = CharacterService.get_url("/api/v1/characters/#{character_id}")
     Character.new(json_response[:data])
   end
+
+  def self.delete_character(character_id)
+    json_response = CharacterService.delete_at_url(character_id)  
+  end
 end

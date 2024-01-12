@@ -64,10 +64,12 @@ class UsersController < ApplicationController
     @character = CharacterFacade.get_character(params[:char_id].to_i)
   end
 
+  def char_delete
+    character = CharacterFacade.delete_character(params[:char_id])
+    redirect_to controller: 'users', action: 'show'
+  end
+
   private
-
-
-
   # def character_params
 
   #   params.permit(:user_id, :index, :name, :race, :alignment, :authenticity_token, :commit)

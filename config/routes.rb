@@ -7,7 +7,8 @@ Rails.application.routes.draw do
 
   get '/users', to: "users#show"
   get '/users/char_create', to: "users#char_create"
-  post '/users/char_create', to:"users#char_save"
+  post '/users/char_create', to: "users#char_save"
+  delete '/users/char_delete/:char_id', to: "users#char_delete"
 
 
   get '/users/char_class', to: "users#char_class"
