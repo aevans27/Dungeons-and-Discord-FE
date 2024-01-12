@@ -18,7 +18,7 @@
                       <p class="navbar-subtitle"></p>
                     </section>
                       <section class="character-stats">
-                        <%= form_tag("/users/char_stats", method: "post") do %>
+                        <%= form_tag("/users/#{params[:char_id]}/char_stats", method: "post") do %>
                         <%= hidden_field_tag "index", params[:index] %>
                         <%= hidden_field_tag "char_id", params[:char_id] %>
                         <div class="form-group">
