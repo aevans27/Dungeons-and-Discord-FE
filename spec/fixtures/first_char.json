@@ -1,244 +1,1831 @@
 {
-  "data": [
-      {
-          "id": "34",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "barbarian",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "39",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "wizard",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "46",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "warlock",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "47",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "barbarian",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "48",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "barbarian",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "51",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "barbarian",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "52",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "barbarian",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "53",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "barbarian",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "54",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "barbarian",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "55",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "barbarian",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "56",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "druid",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "57",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "cleric",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "58",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "ranger",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "59",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "barbarian",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "60",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "barbarian",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "61",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "barbarian",
-              "race": null,
-              "alignment": null,
-              "background": null,
-              "name": null
-          }
-      },
-      {
-          "id": "68",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "paladin",
-              "race": "dragonborn",
-              "alignment": "neutral evil",
-              "background": "Acolyte",
-              "name": "Timmy"
-          }
-      },
-      {
-          "id": "74",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "wizard",
-              "race": "dragonborn",
-              "alignment": "lawful good",
-              "background": "Acolyte",
-              "name": "dddd"
-          }
-      },
-      {
-          "id": "87",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "wizard",
-              "race": "dragonborn",
-              "alignment": "lawful good",
-              "background": "Acolyte",
-              "name": "lll"
-          }
-      },
-      {
-          "id": "121",
-          "type": "character",
-          "attributes": {
-              "user_id": 1,
-              "char_class": "monk",
-              "race": "dragonborn",
-              "alignment": "lawful good",
-              "background": "Acolyte",
-              "name": "ffffff"
-          }
-      }
-  ]
+    "data": [
+        {
+            "id": "34",
+            "type": "character",
+            "attributes": {
+                "id": 34,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "39",
+            "type": "character",
+            "attributes": {
+                "id": 39,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "46",
+            "type": "character",
+            "attributes": {
+                "id": 46,
+                "user_id": 1,
+                "char_class": "warlock",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "47",
+            "type": "character",
+            "attributes": {
+                "id": 47,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "48",
+            "type": "character",
+            "attributes": {
+                "id": 48,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "51",
+            "type": "character",
+            "attributes": {
+                "id": 51,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "52",
+            "type": "character",
+            "attributes": {
+                "id": 52,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "53",
+            "type": "character",
+            "attributes": {
+                "id": 53,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "54",
+            "type": "character",
+            "attributes": {
+                "id": 54,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "55",
+            "type": "character",
+            "attributes": {
+                "id": 55,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "56",
+            "type": "character",
+            "attributes": {
+                "id": 56,
+                "user_id": 1,
+                "char_class": "druid",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "57",
+            "type": "character",
+            "attributes": {
+                "id": 57,
+                "user_id": 1,
+                "char_class": "cleric",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "58",
+            "type": "character",
+            "attributes": {
+                "id": 58,
+                "user_id": 1,
+                "char_class": "ranger",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "59",
+            "type": "character",
+            "attributes": {
+                "id": 59,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "60",
+            "type": "character",
+            "attributes": {
+                "id": 60,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "61",
+            "type": "character",
+            "attributes": {
+                "id": 61,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": null,
+                "alignment": null,
+                "background": null,
+                "name": null,
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "68",
+            "type": "character",
+            "attributes": {
+                "id": 68,
+                "user_id": 1,
+                "char_class": "paladin",
+                "race": "dragonborn",
+                "alignment": "neutral evil",
+                "background": "Acolyte",
+                "name": "Timmy",
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "74",
+            "type": "character",
+            "attributes": {
+                "id": 74,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "dddd",
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "87",
+            "type": "character",
+            "attributes": {
+                "id": 87,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "lll",
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "121",
+            "type": "character",
+            "attributes": {
+                "id": 121,
+                "user_id": 1,
+                "char_class": "monk",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "ffffff",
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "142",
+            "type": "character",
+            "attributes": {
+                "id": 142,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "ssssss",
+                "character_proficiencies": [
+                    {
+                        "id": 50,
+                        "character_id": 142,
+                        "proficiency_name": "Light Armor",
+                        "created_at": "2024-01-11T21:02:18.601Z",
+                        "updated_at": "2024-01-11T21:02:18.601Z"
+                    },
+                    {
+                        "id": 51,
+                        "character_id": 142,
+                        "proficiency_name": "Medium Armor",
+                        "created_at": "2024-01-11T21:02:18.904Z",
+                        "updated_at": "2024-01-11T21:02:18.904Z"
+                    },
+                    {
+                        "id": 52,
+                        "character_id": 142,
+                        "proficiency_name": "Shields",
+                        "created_at": "2024-01-11T21:02:18.916Z",
+                        "updated_at": "2024-01-11T21:02:18.916Z"
+                    },
+                    {
+                        "id": 53,
+                        "character_id": 142,
+                        "proficiency_name": "Simple Weapons",
+                        "created_at": "2024-01-11T21:02:18.935Z",
+                        "updated_at": "2024-01-11T21:02:18.935Z"
+                    },
+                    {
+                        "id": 54,
+                        "character_id": 142,
+                        "proficiency_name": "Martial Weapons",
+                        "created_at": "2024-01-11T21:02:18.939Z",
+                        "updated_at": "2024-01-11T21:02:18.939Z"
+                    },
+                    {
+                        "id": 55,
+                        "character_id": 142,
+                        "proficiency_name": "Saving Throw: STR",
+                        "created_at": "2024-01-11T21:02:18.942Z",
+                        "updated_at": "2024-01-11T21:02:18.942Z"
+                    },
+                    {
+                        "id": 56,
+                        "character_id": 142,
+                        "proficiency_name": "Saving Throw: CON",
+                        "created_at": "2024-01-11T21:02:18.945Z",
+                        "updated_at": "2024-01-11T21:02:18.945Z"
+                    },
+                    {
+                        "id": 57,
+                        "character_id": 142,
+                        "proficiency_name": "Light Armor",
+                        "created_at": "2024-01-11T21:02:24.169Z",
+                        "updated_at": "2024-01-11T21:02:24.169Z"
+                    },
+                    {
+                        "id": 58,
+                        "character_id": 142,
+                        "proficiency_name": "Medium Armor",
+                        "created_at": "2024-01-11T21:02:24.184Z",
+                        "updated_at": "2024-01-11T21:02:24.184Z"
+                    },
+                    {
+                        "id": 59,
+                        "character_id": 142,
+                        "proficiency_name": "Shields",
+                        "created_at": "2024-01-11T21:02:24.206Z",
+                        "updated_at": "2024-01-11T21:02:24.206Z"
+                    },
+                    {
+                        "id": 60,
+                        "character_id": 142,
+                        "proficiency_name": "Simple Weapons",
+                        "created_at": "2024-01-11T21:02:24.217Z",
+                        "updated_at": "2024-01-11T21:02:24.217Z"
+                    },
+                    {
+                        "id": 61,
+                        "character_id": 142,
+                        "proficiency_name": "Martial Weapons",
+                        "created_at": "2024-01-11T21:02:24.220Z",
+                        "updated_at": "2024-01-11T21:02:24.220Z"
+                    },
+                    {
+                        "id": 62,
+                        "character_id": 142,
+                        "proficiency_name": "Saving Throw: STR",
+                        "created_at": "2024-01-11T21:02:24.223Z",
+                        "updated_at": "2024-01-11T21:02:24.223Z"
+                    },
+                    {
+                        "id": 63,
+                        "character_id": 142,
+                        "proficiency_name": "Saving Throw: CON",
+                        "created_at": "2024-01-11T21:02:24.227Z",
+                        "updated_at": "2024-01-11T21:02:24.227Z"
+                    },
+                    {
+                        "id": 64,
+                        "character_id": 142,
+                        "proficiency_name": "Light Armor",
+                        "created_at": "2024-01-11T21:03:02.292Z",
+                        "updated_at": "2024-01-11T21:03:02.292Z"
+                    },
+                    {
+                        "id": 65,
+                        "character_id": 142,
+                        "proficiency_name": "Medium Armor",
+                        "created_at": "2024-01-11T21:03:02.395Z",
+                        "updated_at": "2024-01-11T21:03:02.395Z"
+                    },
+                    {
+                        "id": 66,
+                        "character_id": 142,
+                        "proficiency_name": "Shields",
+                        "created_at": "2024-01-11T21:03:02.400Z",
+                        "updated_at": "2024-01-11T21:03:02.400Z"
+                    },
+                    {
+                        "id": 67,
+                        "character_id": 142,
+                        "proficiency_name": "Simple Weapons",
+                        "created_at": "2024-01-11T21:03:02.409Z",
+                        "updated_at": "2024-01-11T21:03:02.409Z"
+                    },
+                    {
+                        "id": 68,
+                        "character_id": 142,
+                        "proficiency_name": "Martial Weapons",
+                        "created_at": "2024-01-11T21:03:02.433Z",
+                        "updated_at": "2024-01-11T21:03:02.433Z"
+                    },
+                    {
+                        "id": 69,
+                        "character_id": 142,
+                        "proficiency_name": "Saving Throw: STR",
+                        "created_at": "2024-01-11T21:03:02.450Z",
+                        "updated_at": "2024-01-11T21:03:02.450Z"
+                    },
+                    {
+                        "id": 70,
+                        "character_id": 142,
+                        "proficiency_name": "Saving Throw: CON",
+                        "created_at": "2024-01-11T21:03:02.461Z",
+                        "updated_at": "2024-01-11T21:03:02.461Z"
+                    },
+                    {
+                        "id": 71,
+                        "character_id": 142,
+                        "proficiency_name": "Light Armor",
+                        "created_at": "2024-01-11T21:03:25.422Z",
+                        "updated_at": "2024-01-11T21:03:25.422Z"
+                    },
+                    {
+                        "id": 72,
+                        "character_id": 142,
+                        "proficiency_name": "Medium Armor",
+                        "created_at": "2024-01-11T21:03:25.430Z",
+                        "updated_at": "2024-01-11T21:03:25.430Z"
+                    },
+                    {
+                        "id": 73,
+                        "character_id": 142,
+                        "proficiency_name": "Shields",
+                        "created_at": "2024-01-11T21:03:25.458Z",
+                        "updated_at": "2024-01-11T21:03:25.458Z"
+                    },
+                    {
+                        "id": 74,
+                        "character_id": 142,
+                        "proficiency_name": "Simple Weapons",
+                        "created_at": "2024-01-11T21:03:25.461Z",
+                        "updated_at": "2024-01-11T21:03:25.461Z"
+                    },
+                    {
+                        "id": 75,
+                        "character_id": 142,
+                        "proficiency_name": "Martial Weapons",
+                        "created_at": "2024-01-11T21:03:25.465Z",
+                        "updated_at": "2024-01-11T21:03:25.465Z"
+                    },
+                    {
+                        "id": 76,
+                        "character_id": 142,
+                        "proficiency_name": "Saving Throw: STR",
+                        "created_at": "2024-01-11T21:03:25.467Z",
+                        "updated_at": "2024-01-11T21:03:25.467Z"
+                    },
+                    {
+                        "id": 77,
+                        "character_id": 142,
+                        "proficiency_name": "Saving Throw: CON",
+                        "created_at": "2024-01-11T21:03:25.470Z",
+                        "updated_at": "2024-01-11T21:03:25.470Z"
+                    },
+                    {
+                        "id": 78,
+                        "character_id": 142,
+                        "proficiency_name": "Light Armor",
+                        "created_at": "2024-01-11T21:03:41.232Z",
+                        "updated_at": "2024-01-11T21:03:41.232Z"
+                    },
+                    {
+                        "id": 79,
+                        "character_id": 142,
+                        "proficiency_name": "Medium Armor",
+                        "created_at": "2024-01-11T21:03:41.241Z",
+                        "updated_at": "2024-01-11T21:03:41.241Z"
+                    },
+                    {
+                        "id": 80,
+                        "character_id": 142,
+                        "proficiency_name": "Shields",
+                        "created_at": "2024-01-11T21:03:41.245Z",
+                        "updated_at": "2024-01-11T21:03:41.245Z"
+                    },
+                    {
+                        "id": 81,
+                        "character_id": 142,
+                        "proficiency_name": "Simple Weapons",
+                        "created_at": "2024-01-11T21:03:41.253Z",
+                        "updated_at": "2024-01-11T21:03:41.253Z"
+                    },
+                    {
+                        "id": 82,
+                        "character_id": 142,
+                        "proficiency_name": "Martial Weapons",
+                        "created_at": "2024-01-11T21:03:41.256Z",
+                        "updated_at": "2024-01-11T21:03:41.256Z"
+                    },
+                    {
+                        "id": 83,
+                        "character_id": 142,
+                        "proficiency_name": "Saving Throw: STR",
+                        "created_at": "2024-01-11T21:03:41.258Z",
+                        "updated_at": "2024-01-11T21:03:41.258Z"
+                    },
+                    {
+                        "id": 84,
+                        "character_id": 142,
+                        "proficiency_name": "Saving Throw: CON",
+                        "created_at": "2024-01-11T21:03:41.261Z",
+                        "updated_at": "2024-01-11T21:03:41.261Z"
+                    },
+                    {
+                        "id": 85,
+                        "character_id": 142,
+                        "proficiency_name": "Skill: Animal Handling",
+                        "created_at": "2024-01-11T21:03:41.280Z",
+                        "updated_at": "2024-01-11T21:03:41.280Z"
+                    },
+                    {
+                        "id": 86,
+                        "character_id": 142,
+                        "proficiency_name": "Skill: Athletics",
+                        "created_at": "2024-01-11T21:03:41.287Z",
+                        "updated_at": "2024-01-11T21:03:41.287Z"
+                    }
+                ],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "143",
+            "type": "character",
+            "attributes": {
+                "id": 143,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "jjj",
+                "character_proficiencies": [
+                    {
+                        "id": 87,
+                        "character_id": 143,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:04:53.496Z",
+                        "updated_at": "2024-01-11T21:04:53.496Z"
+                    },
+                    {
+                        "id": 88,
+                        "character_id": 143,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:04:53.512Z",
+                        "updated_at": "2024-01-11T21:04:53.512Z"
+                    },
+                    {
+                        "id": 89,
+                        "character_id": 143,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:04:53.527Z",
+                        "updated_at": "2024-01-11T21:04:53.527Z"
+                    },
+                    {
+                        "id": 90,
+                        "character_id": 143,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:04:53.539Z",
+                        "updated_at": "2024-01-11T21:04:53.539Z"
+                    },
+                    {
+                        "id": 91,
+                        "character_id": 143,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:04:53.556Z",
+                        "updated_at": "2024-01-11T21:04:53.556Z"
+                    },
+                    {
+                        "id": 92,
+                        "character_id": 143,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:04:53.560Z",
+                        "updated_at": "2024-01-11T21:04:53.560Z"
+                    },
+                    {
+                        "id": 93,
+                        "character_id": 143,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:04:53.565Z",
+                        "updated_at": "2024-01-11T21:04:53.565Z"
+                    },
+                    {
+                        "id": 94,
+                        "character_id": 143,
+                        "proficiency_name": "Skill: Arcana",
+                        "created_at": "2024-01-11T21:04:53.571Z",
+                        "updated_at": "2024-01-11T21:04:53.571Z"
+                    },
+                    {
+                        "id": 95,
+                        "character_id": 143,
+                        "proficiency_name": "Skill: History",
+                        "created_at": "2024-01-11T21:04:53.574Z",
+                        "updated_at": "2024-01-11T21:04:53.574Z"
+                    },
+                    {
+                        "id": 96,
+                        "character_id": 143,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:11:00.544Z",
+                        "updated_at": "2024-01-11T21:11:00.544Z"
+                    },
+                    {
+                        "id": 97,
+                        "character_id": 143,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:11:00.580Z",
+                        "updated_at": "2024-01-11T21:11:00.580Z"
+                    },
+                    {
+                        "id": 98,
+                        "character_id": 143,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:11:00.586Z",
+                        "updated_at": "2024-01-11T21:11:00.586Z"
+                    },
+                    {
+                        "id": 99,
+                        "character_id": 143,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:11:00.588Z",
+                        "updated_at": "2024-01-11T21:11:00.588Z"
+                    },
+                    {
+                        "id": 100,
+                        "character_id": 143,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:11:00.592Z",
+                        "updated_at": "2024-01-11T21:11:00.592Z"
+                    },
+                    {
+                        "id": 101,
+                        "character_id": 143,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:11:00.594Z",
+                        "updated_at": "2024-01-11T21:11:00.594Z"
+                    },
+                    {
+                        "id": 102,
+                        "character_id": 143,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:11:00.600Z",
+                        "updated_at": "2024-01-11T21:11:00.600Z"
+                    },
+                    {
+                        "id": 103,
+                        "character_id": 143,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:11:48.498Z",
+                        "updated_at": "2024-01-11T21:11:48.498Z"
+                    },
+                    {
+                        "id": 104,
+                        "character_id": 143,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:11:48.513Z",
+                        "updated_at": "2024-01-11T21:11:48.513Z"
+                    },
+                    {
+                        "id": 105,
+                        "character_id": 143,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:11:48.523Z",
+                        "updated_at": "2024-01-11T21:11:48.523Z"
+                    },
+                    {
+                        "id": 106,
+                        "character_id": 143,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:11:48.532Z",
+                        "updated_at": "2024-01-11T21:11:48.532Z"
+                    },
+                    {
+                        "id": 107,
+                        "character_id": 143,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:11:48.587Z",
+                        "updated_at": "2024-01-11T21:11:48.587Z"
+                    },
+                    {
+                        "id": 108,
+                        "character_id": 143,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:11:48.607Z",
+                        "updated_at": "2024-01-11T21:11:48.607Z"
+                    },
+                    {
+                        "id": 109,
+                        "character_id": 143,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:11:48.610Z",
+                        "updated_at": "2024-01-11T21:11:48.610Z"
+                    },
+                    {
+                        "id": 110,
+                        "character_id": 143,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:12:41.125Z",
+                        "updated_at": "2024-01-11T21:12:41.125Z"
+                    },
+                    {
+                        "id": 111,
+                        "character_id": 143,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:12:41.158Z",
+                        "updated_at": "2024-01-11T21:12:41.158Z"
+                    },
+                    {
+                        "id": 112,
+                        "character_id": 143,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:12:41.205Z",
+                        "updated_at": "2024-01-11T21:12:41.205Z"
+                    },
+                    {
+                        "id": 113,
+                        "character_id": 143,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:12:41.211Z",
+                        "updated_at": "2024-01-11T21:12:41.211Z"
+                    },
+                    {
+                        "id": 114,
+                        "character_id": 143,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:12:41.212Z",
+                        "updated_at": "2024-01-11T21:12:41.212Z"
+                    },
+                    {
+                        "id": 115,
+                        "character_id": 143,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:12:41.216Z",
+                        "updated_at": "2024-01-11T21:12:41.216Z"
+                    },
+                    {
+                        "id": 116,
+                        "character_id": 143,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:12:41.222Z",
+                        "updated_at": "2024-01-11T21:12:41.222Z"
+                    }
+                ],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "144",
+            "type": "character",
+            "attributes": {
+                "id": 144,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "kph",
+                "character_proficiencies": [
+                    {
+                        "id": 117,
+                        "character_id": 144,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:14:42.177Z",
+                        "updated_at": "2024-01-11T21:14:42.177Z"
+                    },
+                    {
+                        "id": 118,
+                        "character_id": 144,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:14:42.186Z",
+                        "updated_at": "2024-01-11T21:14:42.186Z"
+                    },
+                    {
+                        "id": 119,
+                        "character_id": 144,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:14:42.191Z",
+                        "updated_at": "2024-01-11T21:14:42.191Z"
+                    },
+                    {
+                        "id": 120,
+                        "character_id": 144,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:14:42.194Z",
+                        "updated_at": "2024-01-11T21:14:42.194Z"
+                    },
+                    {
+                        "id": 121,
+                        "character_id": 144,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:14:42.198Z",
+                        "updated_at": "2024-01-11T21:14:42.198Z"
+                    },
+                    {
+                        "id": 122,
+                        "character_id": 144,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:14:42.214Z",
+                        "updated_at": "2024-01-11T21:14:42.214Z"
+                    },
+                    {
+                        "id": 123,
+                        "character_id": 144,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:14:42.217Z",
+                        "updated_at": "2024-01-11T21:14:42.217Z"
+                    },
+                    {
+                        "id": 124,
+                        "character_id": 144,
+                        "proficiency_name": "Skill: Arcana",
+                        "created_at": "2024-01-11T21:14:42.221Z",
+                        "updated_at": "2024-01-11T21:14:42.221Z"
+                    },
+                    {
+                        "id": 125,
+                        "character_id": 144,
+                        "proficiency_name": "Skill: History",
+                        "created_at": "2024-01-11T21:14:42.224Z",
+                        "updated_at": "2024-01-11T21:14:42.224Z"
+                    },
+                    {
+                        "id": 126,
+                        "character_id": 144,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:17:23.566Z",
+                        "updated_at": "2024-01-11T21:17:23.566Z"
+                    },
+                    {
+                        "id": 127,
+                        "character_id": 144,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:17:23.965Z",
+                        "updated_at": "2024-01-11T21:17:23.965Z"
+                    },
+                    {
+                        "id": 128,
+                        "character_id": 144,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:17:23.977Z",
+                        "updated_at": "2024-01-11T21:17:23.977Z"
+                    },
+                    {
+                        "id": 129,
+                        "character_id": 144,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:17:24.028Z",
+                        "updated_at": "2024-01-11T21:17:24.028Z"
+                    },
+                    {
+                        "id": 130,
+                        "character_id": 144,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:17:24.063Z",
+                        "updated_at": "2024-01-11T21:17:24.063Z"
+                    },
+                    {
+                        "id": 131,
+                        "character_id": 144,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:17:24.095Z",
+                        "updated_at": "2024-01-11T21:17:24.095Z"
+                    },
+                    {
+                        "id": 132,
+                        "character_id": 144,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:17:24.153Z",
+                        "updated_at": "2024-01-11T21:17:24.153Z"
+                    },
+                    {
+                        "id": 133,
+                        "character_id": 144,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:18:29.018Z",
+                        "updated_at": "2024-01-11T21:18:29.018Z"
+                    },
+                    {
+                        "id": 134,
+                        "character_id": 144,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:18:29.059Z",
+                        "updated_at": "2024-01-11T21:18:29.059Z"
+                    },
+                    {
+                        "id": 135,
+                        "character_id": 144,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:18:29.062Z",
+                        "updated_at": "2024-01-11T21:18:29.062Z"
+                    },
+                    {
+                        "id": 136,
+                        "character_id": 144,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:18:29.108Z",
+                        "updated_at": "2024-01-11T21:18:29.108Z"
+                    },
+                    {
+                        "id": 137,
+                        "character_id": 144,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:18:29.111Z",
+                        "updated_at": "2024-01-11T21:18:29.111Z"
+                    },
+                    {
+                        "id": 138,
+                        "character_id": 144,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:18:29.113Z",
+                        "updated_at": "2024-01-11T21:18:29.113Z"
+                    },
+                    {
+                        "id": 139,
+                        "character_id": 144,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:18:29.116Z",
+                        "updated_at": "2024-01-11T21:18:29.116Z"
+                    }
+                ],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "145",
+            "type": "character",
+            "attributes": {
+                "id": 145,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "jj",
+                "character_proficiencies": [
+                    {
+                        "id": 140,
+                        "character_id": 145,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:22:22.361Z",
+                        "updated_at": "2024-01-11T21:22:22.361Z"
+                    },
+                    {
+                        "id": 141,
+                        "character_id": 145,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:22:22.374Z",
+                        "updated_at": "2024-01-11T21:22:22.374Z"
+                    },
+                    {
+                        "id": 142,
+                        "character_id": 145,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:22:22.387Z",
+                        "updated_at": "2024-01-11T21:22:22.387Z"
+                    },
+                    {
+                        "id": 143,
+                        "character_id": 145,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:22:22.391Z",
+                        "updated_at": "2024-01-11T21:22:22.391Z"
+                    },
+                    {
+                        "id": 144,
+                        "character_id": 145,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:22:22.413Z",
+                        "updated_at": "2024-01-11T21:22:22.413Z"
+                    },
+                    {
+                        "id": 145,
+                        "character_id": 145,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:22:22.416Z",
+                        "updated_at": "2024-01-11T21:22:22.416Z"
+                    },
+                    {
+                        "id": 146,
+                        "character_id": 145,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:22:22.421Z",
+                        "updated_at": "2024-01-11T21:22:22.421Z"
+                    },
+                    {
+                        "id": 147,
+                        "character_id": 145,
+                        "proficiency_name": "Skill: Arcana",
+                        "created_at": "2024-01-11T21:22:22.424Z",
+                        "updated_at": "2024-01-11T21:22:22.424Z"
+                    },
+                    {
+                        "id": 148,
+                        "character_id": 145,
+                        "proficiency_name": "Skill: History",
+                        "created_at": "2024-01-11T21:22:22.429Z",
+                        "updated_at": "2024-01-11T21:22:22.429Z"
+                    }
+                ],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "146",
+            "type": "character",
+            "attributes": {
+                "id": 146,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "ll",
+                "character_proficiencies": [
+                    {
+                        "id": 149,
+                        "character_id": 146,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:23:58.564Z",
+                        "updated_at": "2024-01-11T21:23:58.564Z"
+                    },
+                    {
+                        "id": 150,
+                        "character_id": 146,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:23:58.601Z",
+                        "updated_at": "2024-01-11T21:23:58.601Z"
+                    },
+                    {
+                        "id": 151,
+                        "character_id": 146,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:23:58.615Z",
+                        "updated_at": "2024-01-11T21:23:58.615Z"
+                    },
+                    {
+                        "id": 152,
+                        "character_id": 146,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:23:58.634Z",
+                        "updated_at": "2024-01-11T21:23:58.634Z"
+                    },
+                    {
+                        "id": 153,
+                        "character_id": 146,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:23:58.638Z",
+                        "updated_at": "2024-01-11T21:23:58.638Z"
+                    },
+                    {
+                        "id": 154,
+                        "character_id": 146,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:23:58.642Z",
+                        "updated_at": "2024-01-11T21:23:58.642Z"
+                    },
+                    {
+                        "id": 155,
+                        "character_id": 146,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:23:58.646Z",
+                        "updated_at": "2024-01-11T21:23:58.646Z"
+                    },
+                    {
+                        "id": 156,
+                        "character_id": 146,
+                        "proficiency_name": "Skill: Arcana",
+                        "created_at": "2024-01-11T21:23:58.649Z",
+                        "updated_at": "2024-01-11T21:23:58.649Z"
+                    },
+                    {
+                        "id": 157,
+                        "character_id": 146,
+                        "proficiency_name": "Skill: History",
+                        "created_at": "2024-01-11T21:23:58.652Z",
+                        "updated_at": "2024-01-11T21:23:58.652Z"
+                    },
+                    {
+                        "id": 158,
+                        "character_id": 146,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:25:01.617Z",
+                        "updated_at": "2024-01-11T21:25:01.617Z"
+                    },
+                    {
+                        "id": 159,
+                        "character_id": 146,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:25:01.631Z",
+                        "updated_at": "2024-01-11T21:25:01.631Z"
+                    },
+                    {
+                        "id": 160,
+                        "character_id": 146,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:25:01.676Z",
+                        "updated_at": "2024-01-11T21:25:01.676Z"
+                    },
+                    {
+                        "id": 161,
+                        "character_id": 146,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:25:01.684Z",
+                        "updated_at": "2024-01-11T21:25:01.684Z"
+                    },
+                    {
+                        "id": 162,
+                        "character_id": 146,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:25:01.716Z",
+                        "updated_at": "2024-01-11T21:25:01.716Z"
+                    },
+                    {
+                        "id": 163,
+                        "character_id": 146,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:25:01.722Z",
+                        "updated_at": "2024-01-11T21:25:01.722Z"
+                    },
+                    {
+                        "id": 164,
+                        "character_id": 146,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:25:01.725Z",
+                        "updated_at": "2024-01-11T21:25:01.725Z"
+                    },
+                    {
+                        "id": 165,
+                        "character_id": 146,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:25:49.421Z",
+                        "updated_at": "2024-01-11T21:25:49.421Z"
+                    },
+                    {
+                        "id": 166,
+                        "character_id": 146,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:25:49.429Z",
+                        "updated_at": "2024-01-11T21:25:49.429Z"
+                    },
+                    {
+                        "id": 167,
+                        "character_id": 146,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:25:49.438Z",
+                        "updated_at": "2024-01-11T21:25:49.438Z"
+                    },
+                    {
+                        "id": 168,
+                        "character_id": 146,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:25:49.442Z",
+                        "updated_at": "2024-01-11T21:25:49.442Z"
+                    },
+                    {
+                        "id": 169,
+                        "character_id": 146,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:25:49.447Z",
+                        "updated_at": "2024-01-11T21:25:49.447Z"
+                    },
+                    {
+                        "id": 170,
+                        "character_id": 146,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:25:49.451Z",
+                        "updated_at": "2024-01-11T21:25:49.451Z"
+                    },
+                    {
+                        "id": 171,
+                        "character_id": 146,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:25:49.455Z",
+                        "updated_at": "2024-01-11T21:25:49.455Z"
+                    }
+                ],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "147",
+            "type": "character",
+            "attributes": {
+                "id": 147,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "jojo",
+                "character_proficiencies": [
+                    {
+                        "id": 172,
+                        "character_id": 147,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:37:25.206Z",
+                        "updated_at": "2024-01-11T21:37:25.206Z"
+                    },
+                    {
+                        "id": 173,
+                        "character_id": 147,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:37:25.213Z",
+                        "updated_at": "2024-01-11T21:37:25.213Z"
+                    },
+                    {
+                        "id": 174,
+                        "character_id": 147,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:37:25.220Z",
+                        "updated_at": "2024-01-11T21:37:25.220Z"
+                    },
+                    {
+                        "id": 175,
+                        "character_id": 147,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:37:25.222Z",
+                        "updated_at": "2024-01-11T21:37:25.222Z"
+                    },
+                    {
+                        "id": 176,
+                        "character_id": 147,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:37:25.234Z",
+                        "updated_at": "2024-01-11T21:37:25.234Z"
+                    },
+                    {
+                        "id": 177,
+                        "character_id": 147,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:37:25.237Z",
+                        "updated_at": "2024-01-11T21:37:25.237Z"
+                    },
+                    {
+                        "id": 178,
+                        "character_id": 147,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:37:25.239Z",
+                        "updated_at": "2024-01-11T21:37:25.239Z"
+                    },
+                    {
+                        "id": 179,
+                        "character_id": 147,
+                        "proficiency_name": "Skill: Arcana",
+                        "created_at": "2024-01-11T21:37:25.242Z",
+                        "updated_at": "2024-01-11T21:37:25.242Z"
+                    },
+                    {
+                        "id": 180,
+                        "character_id": 147,
+                        "proficiency_name": "Skill: History",
+                        "created_at": "2024-01-11T21:37:25.244Z",
+                        "updated_at": "2024-01-11T21:37:25.244Z"
+                    }
+                ],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "148",
+            "type": "character",
+            "attributes": {
+                "id": 148,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "hjl",
+                "character_proficiencies": [
+                    {
+                        "id": 181,
+                        "character_id": 148,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T21:47:47.883Z",
+                        "updated_at": "2024-01-11T21:47:47.883Z"
+                    },
+                    {
+                        "id": 182,
+                        "character_id": 148,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T21:47:47.899Z",
+                        "updated_at": "2024-01-11T21:47:47.899Z"
+                    },
+                    {
+                        "id": 183,
+                        "character_id": 148,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T21:47:47.904Z",
+                        "updated_at": "2024-01-11T21:47:47.904Z"
+                    },
+                    {
+                        "id": 184,
+                        "character_id": 148,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T21:47:47.909Z",
+                        "updated_at": "2024-01-11T21:47:47.909Z"
+                    },
+                    {
+                        "id": 185,
+                        "character_id": 148,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T21:47:47.914Z",
+                        "updated_at": "2024-01-11T21:47:47.914Z"
+                    },
+                    {
+                        "id": 186,
+                        "character_id": 148,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T21:47:47.916Z",
+                        "updated_at": "2024-01-11T21:47:47.916Z"
+                    },
+                    {
+                        "id": 187,
+                        "character_id": 148,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T21:47:47.921Z",
+                        "updated_at": "2024-01-11T21:47:47.921Z"
+                    },
+                    {
+                        "id": 188,
+                        "character_id": 148,
+                        "proficiency_name": "Skill: Arcana",
+                        "created_at": "2024-01-11T21:47:47.945Z",
+                        "updated_at": "2024-01-11T21:47:47.945Z"
+                    },
+                    {
+                        "id": 189,
+                        "character_id": 148,
+                        "proficiency_name": "Skill: History",
+                        "created_at": "2024-01-11T21:47:47.948Z",
+                        "updated_at": "2024-01-11T21:47:47.948Z"
+                    }
+                ],
+                "character_items": [],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "149",
+            "type": "character",
+            "attributes": {
+                "id": 149,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "ll",
+                "character_proficiencies": [
+                    {
+                        "id": 190,
+                        "character_id": 149,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T22:56:45.658Z",
+                        "updated_at": "2024-01-11T22:56:45.658Z"
+                    },
+                    {
+                        "id": 191,
+                        "character_id": 149,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T22:56:45.674Z",
+                        "updated_at": "2024-01-11T22:56:45.674Z"
+                    },
+                    {
+                        "id": 192,
+                        "character_id": 149,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T22:56:45.682Z",
+                        "updated_at": "2024-01-11T22:56:45.682Z"
+                    },
+                    {
+                        "id": 193,
+                        "character_id": 149,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T22:56:45.686Z",
+                        "updated_at": "2024-01-11T22:56:45.686Z"
+                    },
+                    {
+                        "id": 194,
+                        "character_id": 149,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T22:56:45.690Z",
+                        "updated_at": "2024-01-11T22:56:45.690Z"
+                    },
+                    {
+                        "id": 195,
+                        "character_id": 149,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T22:56:45.693Z",
+                        "updated_at": "2024-01-11T22:56:45.693Z"
+                    },
+                    {
+                        "id": 196,
+                        "character_id": 149,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T22:56:45.719Z",
+                        "updated_at": "2024-01-11T22:56:45.719Z"
+                    },
+                    {
+                        "id": 197,
+                        "character_id": 149,
+                        "proficiency_name": "Skill: Arcana",
+                        "created_at": "2024-01-11T22:56:45.722Z",
+                        "updated_at": "2024-01-11T22:56:45.722Z"
+                    },
+                    {
+                        "id": 198,
+                        "character_id": 149,
+                        "proficiency_name": "Skill: History",
+                        "created_at": "2024-01-11T22:56:45.725Z",
+                        "updated_at": "2024-01-11T22:56:45.725Z"
+                    }
+                ],
+                "character_items": [
+                    {
+                        "id": 1,
+                        "character_id": 149,
+                        "item_name": "Spellbook",
+                        "created_at": "2024-01-11T22:57:02.681Z",
+                        "updated_at": "2024-01-11T22:57:02.681Z"
+                    },
+                    {
+                        "id": 2,
+                        "character_id": 149,
+                        "item_name": "Spellbook",
+                        "created_at": "2024-01-11T22:57:18.600Z",
+                        "updated_at": "2024-01-11T22:57:18.600Z"
+                    },
+                    {
+                        "id": 3,
+                        "character_id": 149,
+                        "item_name": "Dagger",
+                        "created_at": "2024-01-11T22:57:18.604Z",
+                        "updated_at": "2024-01-11T22:57:18.604Z"
+                    },
+                    {
+                        "id": 4,
+                        "character_id": 149,
+                        "item_name": "arcane focus",
+                        "created_at": "2024-01-11T22:57:18.607Z",
+                        "updated_at": "2024-01-11T22:57:18.607Z"
+                    },
+                    {
+                        "id": 5,
+                        "character_id": 149,
+                        "item_name": "Explorer's Pack",
+                        "created_at": "2024-01-11T22:57:18.608Z",
+                        "updated_at": "2024-01-11T22:57:18.608Z"
+                    },
+                    {
+                        "id": 6,
+                        "character_id": 149,
+                        "item_name": "Spellbook",
+                        "created_at": "2024-01-11T23:00:27.018Z",
+                        "updated_at": "2024-01-11T23:00:27.018Z"
+                    },
+                    {
+                        "id": 7,
+                        "character_id": 149,
+                        "item_name": "Dagger",
+                        "created_at": "2024-01-11T23:00:27.033Z",
+                        "updated_at": "2024-01-11T23:00:27.033Z"
+                    },
+                    {
+                        "id": 8,
+                        "character_id": 149,
+                        "item_name": "arcane focus",
+                        "created_at": "2024-01-11T23:00:27.040Z",
+                        "updated_at": "2024-01-11T23:00:27.040Z"
+                    },
+                    {
+                        "id": 9,
+                        "character_id": 149,
+                        "item_name": "Explorer's Pack",
+                        "created_at": "2024-01-11T23:00:27.048Z",
+                        "updated_at": "2024-01-11T23:00:27.048Z"
+                    }
+                ],
+                "character_stat": null
+            }
+        },
+        {
+            "id": "150",
+            "type": "character",
+            "attributes": {
+                "id": 150,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "top",
+                "character_proficiencies": [
+                    {
+                        "id": 199,
+                        "character_id": 150,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-11T23:09:17.846Z",
+                        "updated_at": "2024-01-11T23:09:17.846Z"
+                    },
+                    {
+                        "id": 200,
+                        "character_id": 150,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-11T23:09:17.896Z",
+                        "updated_at": "2024-01-11T23:09:17.896Z"
+                    },
+                    {
+                        "id": 201,
+                        "character_id": 150,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-11T23:09:17.904Z",
+                        "updated_at": "2024-01-11T23:09:17.904Z"
+                    },
+                    {
+                        "id": 202,
+                        "character_id": 150,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-11T23:09:17.908Z",
+                        "updated_at": "2024-01-11T23:09:17.908Z"
+                    },
+                    {
+                        "id": 203,
+                        "character_id": 150,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-11T23:09:17.910Z",
+                        "updated_at": "2024-01-11T23:09:17.910Z"
+                    },
+                    {
+                        "id": 204,
+                        "character_id": 150,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-11T23:09:17.914Z",
+                        "updated_at": "2024-01-11T23:09:17.914Z"
+                    },
+                    {
+                        "id": 205,
+                        "character_id": 150,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-11T23:09:17.921Z",
+                        "updated_at": "2024-01-11T23:09:17.921Z"
+                    },
+                    {
+                        "id": 206,
+                        "character_id": 150,
+                        "proficiency_name": "Skill: Arcana",
+                        "created_at": "2024-01-11T23:09:17.951Z",
+                        "updated_at": "2024-01-11T23:09:17.951Z"
+                    },
+                    {
+                        "id": 207,
+                        "character_id": 150,
+                        "proficiency_name": "Skill: History",
+                        "created_at": "2024-01-11T23:09:17.957Z",
+                        "updated_at": "2024-01-11T23:09:17.957Z"
+                    }
+                ],
+                "character_items": [
+                    {
+                        "id": 10,
+                        "character_id": 150,
+                        "item_name": "Spellbook",
+                        "created_at": "2024-01-11T23:09:23.881Z",
+                        "updated_at": "2024-01-11T23:09:23.881Z"
+                    },
+                    {
+                        "id": 11,
+                        "character_id": 150,
+                        "item_name": "Dagger",
+                        "created_at": "2024-01-11T23:09:23.894Z",
+                        "updated_at": "2024-01-11T23:09:23.894Z"
+                    },
+                    {
+                        "id": 12,
+                        "character_id": 150,
+                        "item_name": "arcane focus",
+                        "created_at": "2024-01-11T23:09:23.898Z",
+                        "updated_at": "2024-01-11T23:09:23.898Z"
+                    },
+                    {
+                        "id": 13,
+                        "character_id": 150,
+                        "item_name": "Explorer's Pack",
+                        "created_at": "2024-01-11T23:09:23.904Z",
+                        "updated_at": "2024-01-11T23:09:23.904Z"
+                    }
+                ],
+                "character_stat": {
+                    "id": 1,
+                    "character_id": 150,
+                    "str": 1,
+                    "dex": 1,
+                    "con": 1,
+                    "int": 1,
+                    "wis": 1,
+                    "cha": 1,
+                    "armor_class": null,
+                    "max_hit_point": 6,
+                    "current_hit_points": null,
+                    "speed": null,
+                    "created_at": "2024-01-11T23:17:06.598Z",
+                    "updated_at": "2024-01-11T23:17:06.598Z"
+                }
+            }
+        },
+        {
+            "id": "151",
+            "type": "character",
+            "attributes": {
+                "id": 151,
+                "user_id": 1,
+                "char_class": "wizard",
+                "race": "dragonborn",
+                "alignment": "lawful good",
+                "background": "Acolyte",
+                "name": "bob",
+                "character_proficiencies": [
+                    {
+                        "id": 208,
+                        "character_id": 151,
+                        "proficiency_name": "Daggers",
+                        "created_at": "2024-01-12T01:20:12.934Z",
+                        "updated_at": "2024-01-12T01:20:12.934Z"
+                    },
+                    {
+                        "id": 209,
+                        "character_id": 151,
+                        "proficiency_name": "Darts",
+                        "created_at": "2024-01-12T01:20:12.944Z",
+                        "updated_at": "2024-01-12T01:20:12.944Z"
+                    },
+                    {
+                        "id": 210,
+                        "character_id": 151,
+                        "proficiency_name": "Slings",
+                        "created_at": "2024-01-12T01:20:12.948Z",
+                        "updated_at": "2024-01-12T01:20:12.948Z"
+                    },
+                    {
+                        "id": 211,
+                        "character_id": 151,
+                        "proficiency_name": "Quarterstaffs",
+                        "created_at": "2024-01-12T01:20:12.965Z",
+                        "updated_at": "2024-01-12T01:20:12.965Z"
+                    },
+                    {
+                        "id": 212,
+                        "character_id": 151,
+                        "proficiency_name": "Crossbows, light",
+                        "created_at": "2024-01-12T01:20:12.969Z",
+                        "updated_at": "2024-01-12T01:20:12.969Z"
+                    },
+                    {
+                        "id": 213,
+                        "character_id": 151,
+                        "proficiency_name": "Saving Throw: INT",
+                        "created_at": "2024-01-12T01:20:12.972Z",
+                        "updated_at": "2024-01-12T01:20:12.972Z"
+                    },
+                    {
+                        "id": 214,
+                        "character_id": 151,
+                        "proficiency_name": "Saving Throw: WIS",
+                        "created_at": "2024-01-12T01:20:12.976Z",
+                        "updated_at": "2024-01-12T01:20:12.976Z"
+                    },
+                    {
+                        "id": 215,
+                        "character_id": 151,
+                        "proficiency_name": "Skill: Arcana",
+                        "created_at": "2024-01-12T01:20:12.982Z",
+                        "updated_at": "2024-01-12T01:20:12.982Z"
+                    },
+                    {
+                        "id": 216,
+                        "character_id": 151,
+                        "proficiency_name": "Skill: History",
+                        "created_at": "2024-01-12T01:20:13.001Z",
+                        "updated_at": "2024-01-12T01:20:13.001Z"
+                    }
+                ],
+                "character_items": [
+                    {
+                        "id": 14,
+                        "character_id": 151,
+                        "item_name": "Spellbook",
+                        "created_at": "2024-01-12T01:20:18.286Z",
+                        "updated_at": "2024-01-12T01:20:18.286Z"
+                    },
+                    {
+                        "id": 15,
+                        "character_id": 151,
+                        "item_name": "Dagger",
+                        "created_at": "2024-01-12T01:20:18.300Z",
+                        "updated_at": "2024-01-12T01:20:18.300Z"
+                    },
+                    {
+                        "id": 16,
+                        "character_id": 151,
+                        "item_name": "arcane focus",
+                        "created_at": "2024-01-12T01:20:18.313Z",
+                        "updated_at": "2024-01-12T01:20:18.313Z"
+                    },
+                    {
+                        "id": 17,
+                        "character_id": 151,
+                        "item_name": "Explorer's Pack",
+                        "created_at": "2024-01-12T01:20:18.335Z",
+                        "updated_at": "2024-01-12T01:20:18.335Z"
+                    }
+                ],
+                "character_stat": {
+                    "id": 2,
+                    "character_id": 151,
+                    "str": 1,
+                    "dex": 1,
+                    "con": 1,
+                    "int": 1,
+                    "wis": 1,
+                    "cha": 1,
+                    "armor_class": null,
+                    "max_hit_point": 6,
+                    "current_hit_points": null,
+                    "speed": null,
+                    "created_at": "2024-01-12T01:20:20.464Z",
+                    "updated_at": "2024-01-12T01:20:20.464Z"
+                }
+            }
+        },
+        {
+            "id": "152",
+            "type": "character",
+            "attributes": {
+                "id": 152,
+                "user_id": 1,
+                "char_class": "barbarian",
+                "race": "tiefling",
+                "alignment": "chaotic evil",
+                "background": "Acolyte",
+                "name": "gg",
+                "character_proficiencies": [],
+                "character_items": [],
+                "character_stat": null
+            }
+        }
+    ]
 }

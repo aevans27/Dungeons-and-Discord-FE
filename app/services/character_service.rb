@@ -5,7 +5,6 @@ class CharacterService
   
   def self.get_url(url)
     response = conn.get(url)
-    # require 'pry';binding.pry
     JSON.parse(response.body, symbolize_names: true)
   end
 
@@ -15,5 +14,9 @@ class CharacterService
       req.headers['Content-Type'] = 'application/json'
     end
     JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.delete_at_url(char_id)
+    response = conn.delete("/api/v1/characters/#{char_id}")
   end
 end

@@ -78,5 +78,7 @@
     <p>Charisma: <%= @character.stats[:cha] %></p>
     <p>Max Hit Points: <%= @character.stats[:max_hit_point] %></p>
   </div>
+
+  <%= button_to 'Delete Character', "/users/char_delete/#{@character.id}", method: :delete %>
 </body>
 </html>
