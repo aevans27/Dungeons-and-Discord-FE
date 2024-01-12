@@ -54,6 +54,6 @@ discord:
 
 
 ### Web View
-![]()
-![]()
-![]()
+![home-page](/assets/images/home-page.png)
+![char-prof](/assets/images/char-prof.png)
+![char-show](/assets/images/char-show.png)
